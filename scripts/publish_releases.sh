@@ -6,7 +6,7 @@ D="$(TZ=Asia/Seoul date +%m/%d)"   # Release 제목 앞에 생성 날짜 → 목
 mp3s=(output/voice_*.mp3)
 if [ ${#mp3s[@]} -gt 0 ]; then
   gh release delete voice-samples -y --cleanup-tag 2>/dev/null || true
-  gh release create voice-samples "${mp3s[@]}" --title "음성 샘플 (선희 / 나나미)" --notes "한국어: SunHi, 일본어: Nanami"
+  gh release create voice-samples "${mp3s[@]}" --title "음성 샘플 (한국어 3 / 일본어 2)" --notes "edge-tts 무료 제공분 전체. 한국어: SunHi(여), InJoon(남), Hyunsu(남) / 일본어: Nanami(여), Keita(남)"
 fi
 for mp4 in output/*.mp4; do
   base="${mp4%.mp4}"; tag="$(basename "$base")"

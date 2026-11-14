@@ -92,13 +92,24 @@ python -m shorts check              # 큐 형식/중복 검사
 ## 설정 (Settings → Secrets and variables → Actions → Variables, 모두 선택)
 | 이름 | 기본값 | 설명 |
 |---|---|---|
-| `VOICE_KO` | `ko-KR-SunHiNeural` | 한국어 여성 음성(단어 읽기). 다른 여성 음성: `ko-KR-JiMinNeural`, `ko-KR-SeoHyeonNeural`, `ko-KR-YuJinNeural` |
-| `VOICE_JA` | `ja-JP-NanamiNeural` | 일본어 여성 음성(뜻·인트로). 다른 여성 음성: `ja-JP-AoiNeural`(밝음), `ja-JP-MayuNeural`, `ja-JP-ShioriNeural` |
+| `VOICE_KO` | `ko-KR-SunHiNeural` | 한국어 음성(단어 읽기). 아래 3개 중 선택 |
+| `VOICE_JA` | `ja-JP-NanamiNeural` | 일본어 음성(뜻·인트로). 아래 2개 중 선택 |
 | `CHANNEL_NAME` | `毎日韓国語` | 설명란 표기 |
 | `TOPIK_LEVEL` | `初級` | 태그 표기 (TOPIK 1~2급) |
 
+### 쓸 수 있는 음성 (중요)
+무료 edge-tts가 주는 음성은 **한국어 3개 / 일본어 2개뿐**입니다 (전체 318개 중, 2026-11 확인).
+
+| 언어 | 음성 |
+|---|---|
+| 한국어 | `ko-KR-SunHiNeural` (여, 기본) · `ko-KR-InJoonNeural` (남) · `ko-KR-HyunsuMultilingualNeural` (남) |
+| 일본어 | `ja-JP-NanamiNeural` (여, 기본) · `ja-JP-KeitaNeural` (남) |
+
+`ja-JP-AoiNeural`, `ko-KR-JiMinNeural` 같은 이름은 **유료 Azure Speech 전용**이라 여기에 넣으면 생성이 실패합니다.
+더 다양한 음성이 필요하면 Azure Speech(API 키 필요)로 바꿔야 하고, 그러면 "API 키 불필요" 구조가 깨집니다.
+
 수동 실행: Actions → *daily-shorts* → Run workflow (kind, count 지정 가능).
-음성 미리 듣기: kind에 `voices` 입력 → Releases의 *음성 샘플* 에서 mp3 재생.
+음성 미리 듣기: `python -m shorts voices` (또는 kind에 `voices` 입력) → 위 5개 음성 샘플 mp3가 전부 생성되고 Releases의 *음성 샘플* 에 올라갑니다.
 
 ## 썸네일
 첫 장면(인트로)이 곧 썸네일입니다. 영상과 함께 `*_thumb.jpg`(1080×1920)로 저장되며, 눈이 편한 파스텔 5색이 Day마다 순환하고 레이아웃은 고정이라 채널 그리드에서 시리즈로 보입니다.

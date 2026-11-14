@@ -37,9 +37,15 @@ def main():
     if a.kind == "voices":
         from .video import tts
         config.OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+        ko = "주문. 지하철. 커피를 주문할게요. 매일 아침 6시에 일어나요."
+        ja = "今日の韓国語の単語10個。今日は何個わかるかな？ 注文。"
+        # 무료 edge-tts가 제공하는 한국어 3 / 일본어 2를 전부 뽑아 비교해 볼 수 있게 한다
         for name, text, voice in [
-            ("sunhi_ko", "주문. 커피를 주문할게요. 영수증 주세요.", config.VOICE_KO),
-            ("nanami_ja", "今日の韓国語の単語10個。今日は何個わかるかな？ 注文。", config.VOICE_JA),
+            ("ko_1_sunhi", ko, "ko-KR-SunHiNeural"),
+            ("ko_2_injoon", ko, "ko-KR-InJoonNeural"),
+            ("ko_3_hyunsu", ko, "ko-KR-HyunsuMultilingualNeural"),
+            ("ja_1_nanami", ja, "ja-JP-NanamiNeural"),
+            ("ja_2_keita", ja, "ja-JP-KeitaNeural"),
         ]:
             tts(text, voice, config.OUTPUT_DIR / f"voice_{name}.mp3")
             print(f"  {voice} → output/voice_{name}.mp3")

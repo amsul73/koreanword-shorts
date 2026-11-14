@@ -34,9 +34,12 @@ FONT_CANDIDATES = [
     "C:/Windows/Fonts/malgun{wb}.ttf",
 ]
 
-# TTS (edge-tts, 무료) — 기본은 모두 여성 음성
-#   한국어 여성(메인·단어 읽기): ko-KR-SunHiNeural(기본), ko-KR-JiMinNeural, ko-KR-SeoHyeonNeural, ko-KR-YuJinNeural
-#   일본어 여성(설명·뜻 읽기):   ja-JP-NanamiNeural(기본), ja-JP-AoiNeural(밝음), ja-JP-MayuNeural, ja-JP-ShioriNeural
+# TTS (edge-tts, 무료)
+# 주의: 무료 edge-tts endpoint가 주는 음성은 한국어 3개 / 일본어 2개뿐이다 (전체 318개 중, 2026-11 확인).
+#   한국어: ko-KR-SunHiNeural(여, 기본) · ko-KR-InJoonNeural(남) · ko-KR-HyunsuMultilingualNeural(남)
+#   일본어: ja-JP-NanamiNeural(여, 기본) · ja-JP-KeitaNeural(남)
+# ja-JP-AoiNeural, ko-KR-JiMinNeural 같은 음성은 유료 Azure Speech 전용이라 여기서 지정하면 실패한다.
+# 현재 쓸 수 있는 음성을 전부 들어보려면: python -m shorts voices
 TTS_ENABLED = os.getenv("TTS_ENABLED", "1") == "1"
 VOICE_KO = os.getenv("VOICE_KO", "ko-KR-SunHiNeural")   # 배우는 말 = 한국어
 VOICE_JA = os.getenv("VOICE_JA", "ja-JP-NanamiNeural")  # 설명하는 말 = 일본어
