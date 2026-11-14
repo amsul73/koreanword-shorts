@@ -26,7 +26,7 @@ class Scene:
 def build_scenes(data):
     if data["type"] == "vocab":
         s = [Scene(R.vocab_intro(data), 2.5,
-                   [(f"今日の韓国語の単語{len(data['words'])}個。いくつ知っていますか？", C.VOICE_JA)], pad=0.3)]
+                   [(f"今日の韓国語の単語{len(data['words'])}個。今日は何個わかるかな？", C.VOICE_JA)], pad=0.3)]
         for i, w in enumerate(data["words"]):
             for n in (3, 2, 1):
                 s.append(Scene(R.vocab_quiz(data, i, n), 0.5))
@@ -38,7 +38,7 @@ def build_scenes(data):
         # 마지막 단어가 끝나면 복습표. END_CTA=1이면 복습표 하단에 구독 배너 + 페이드아웃 종료
         if C.END_CTA:
             # 복습표가 나오는 동안 나나미(일본어) 음성으로 구독 문구 읽기 (최소 4.5초, 음성이 길면 그만큼 + 1초)
-            s.append(Scene(R.vocab_review(data, cta=True), 4.5, [(R.CTA_TEXT, C.VOICE_JA)], pad=1.0))
+            s.append(Scene(R.vocab_review(data, cta=True), 4.5, [(R.cta_text(data), C.VOICE_JA)], pad=1.0))
         else:
             s.append(Scene(R.vocab_review(data), 4.5))
         return s

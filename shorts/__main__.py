@@ -39,7 +39,7 @@ def main():
         config.OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
         for name, text, voice in [
             ("sunhi_ko", "주문. 커피를 주문할게요. 영수증 주세요.", config.VOICE_KO),
-            ("nanami_ja", "今日の韓国語の単語10個。いくつ知っていますか？ 注文。", config.VOICE_JA),
+            ("nanami_ja", "今日の韓国語の単語10個。今日は何個わかるかな？ 注文。", config.VOICE_JA),
         ]:
             tts(text, voice, config.OUTPUT_DIR / f"voice_{name}.mp3")
             print(f"  {voice} → output/voice_{name}.mp3")

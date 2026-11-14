@@ -216,7 +216,13 @@ def vocab_quiz(data, i, count):
     return img
 
 
-CTA_TEXT = "チャンネル登録で毎日韓国語を勉強できます"
+CTA_TEXT = "チャンネル登録で毎日韓国語を勉強できます"       # 구독 유도 (홀수 Day)
+CTA_TEXT_ALT = "今日は何個わかった？コメントで教えてね"      # 댓글 유도 (짝수 Day)
+
+
+def cta_text(data):
+    """마지막 배너 문구. Day 홀짝으로 구독 유도 / 댓글 유도를 번갈아 쓴다."""
+    return CTA_TEXT if data["day"] % 2 == 1 else CTA_TEXT_ALT
 
 
 def cta_banner(d, y=SAFE_BOTTOM - 10, text=CTA_TEXT):
@@ -266,7 +272,7 @@ def vocab_review(data, cta=False):
         d.text((C.WIDTH - MARGIN - text_w(d, m, fm), y + 4), m, font=fm, fill=C.TEXT)
         y += row_h
     if cta:
-        cta_banner(d, y=SAFE_BOTTOM - 20)
+        cta_banner(d, y=SAFE_BOTTOM - 20, text=cta_text(data))
     else:
         center(d, f"明日は Day {data['day'] + 1} · 登録して毎日復習！", SAFE_BOTTOM + 10, font(44, True), C.ACCENT)
     return img
