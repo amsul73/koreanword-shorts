@@ -1,0 +1,16 @@
+{
+  "theme": "買い物",
+  "hook": "영수증",
+  "words": [
+    {"word": "가격", "reading": "カギョク", "meaning": "値段", "example": "가격이 좀 비싸요.", "example_ja": "値段が少し高いです。"},
+    {"word": "비싸다", "reading": "ピッサダ", "meaning": "高い", "example": "이 옷은 너무 비싸요.", "example_ja": "この服は高すぎます。"},
+    {"word": "싸다", "reading": "ッサダ", "meaning": "安い", "example": "여기가 더 싸요.", "example_ja": "ここのほうが安いです。"},
+    {"word": "할인", "reading": "ハリン", "meaning": "割引", "example": "지금 할인 중이에요.", "example_ja": "今、割引中です。"},
+    {"word": "영수증", "reading": "ヨンスジュン", "meaning": "レシート", "example": "영수증 주세요.", "example_ja": "レシートをください。"},
+    {"word": "교환", "reading": "キョファン", "meaning": "交換", "example": "다른 색으로 교환하고 싶어요.", "example_ja": "別の色に交換したいです。"},
+    {"word": "환불", "reading": "ファンブル", "meaning": "払い戻し", "example": "환불할 수 있어요?", "example_ja": "払い戻しできますか。"},
+    {"word": "사이즈", "reading": "サイジュ", "meaning": "サイズ", "example": "사이즈가 좀 작아요.", "example_ja": "サイズが少し小さいです。"},
+    {"word": "고르다", "reading": "コルダ", "meaning": "選ぶ", "example": "마음에 드는 걸 골랐어요.", "example_ja": "気に入ったものを選びました。"},
+    {"word": "카드", "reading": "カドゥ", "meaning": "カード", "example": "카드로 계산할게요.", "example_ja": "カードで払います。"}
+  ]
+}

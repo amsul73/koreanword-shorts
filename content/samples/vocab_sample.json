@@ -1,0 +1,16 @@
+{
+  "theme": "カフェで",
+  "hook": "주문",
+  "words": [
+    {"word": "주문", "reading": "チュムン", "meaning": "注文", "example": "커피를 주문할게요.", "example_ja": "コーヒーを注文します。"},
+    {"word": "설탕", "reading": "ソルタン", "meaning": "砂糖", "example": "설탕은 안 넣어 주세요.", "example_ja": "砂糖は入れないでください。"},
+    {"word": "포장", "reading": "ポジャン", "meaning": "持ち帰り", "example": "포장해 주세요.", "example_ja": "持ち帰りでお願いします。"},
+    {"word": "자리", "reading": "チャリ", "meaning": "席", "example": "이 자리 비었어요?", "example_ja": "この席、空いていますか。"},
+    {"word": "계산", "reading": "ケサン", "meaning": "会計", "example": "계산해 주세요.", "example_ja": "会計をお願いします。"},
+    {"word": "추천", "reading": "チュチョン", "meaning": "おすすめ", "example": "추천 메뉴가 뭐예요?", "example_ja": "おすすめは何ですか。"},
+    {"word": "얼음", "reading": "オルム", "meaning": "氷", "example": "얼음을 많이 주세요.", "example_ja": "氷を多めにください。"},
+    {"word": "뜨겁다", "reading": "ットゥゴプタ", "meaning": "熱い", "example": "커피가 너무 뜨거워요.", "example_ja": "コーヒーが熱すぎます。"},
+    {"word": "차갑다", "reading": "チャガプタ", "meaning": "冷たい", "example": "차가운 물 주세요.", "example_ja": "冷たい水をください。"},
+    {"word": "빨대", "reading": "ッパルテ", "meaning": "ストロー", "example": "빨대 하나 주세요.", "example_ja": "ストローを一本ください。"}
+  ]
+}

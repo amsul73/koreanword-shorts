@@ -1,0 +1,75 @@
+name: retts
+
+# edge-tts(선희·나나미)가 복구되면, gTTS로 대체 생성됐던 영상을 다시 만들어 Release를 교체하고 Issue로 알림.
+on:
+  schedule:
+    - cron: "17 */6 * * *"   # 6시간마다 확인
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency: daily-shorts   # 매일 생성 작업과 겹치지 않게
+
+jobs:
+  retts:
+    runs-on: ubuntu-latest
+    env:
+      TZ: Asia/Seoul
+      TOPIK_LEVEL: ${{ vars.TOPIK_LEVEL || '初級' }}
+      CHANNEL_NAME: ${{ vars.CHANNEL_NAME || '毎日韓国語' }}
+      VOICE_KO: ${{ vars.VOICE_KO || 'ko-KR-SunHiNeural' }}
+      VOICE_JA: ${{ vars.VOICE_JA || 'ja-JP-NanamiNeural' }}
+    steps:
+      - uses: actions/checkout@v5
+      - name: Anything to redo?
+        id: need
+        run: |
+          if python3 -c "import json,sys; h=json.load(open('data/history.json')); sys.exit(0 if any(r.get('tts')=='gtts' for r in h.get('rendered',[])) else 1)"; then
+            echo "todo=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "대체 음성 영상 없음 → 종료"
+          fi
+      - uses: actions/setup-python@v6
+        if: steps.need.outputs.todo == 'true'
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Probe edge-tts
+        id: probe
+        if: steps.need.outputs.todo == 'true'
+        run: |
+          pip install -q edge-tts
+          if python scripts/retts.py --probe; then echo "ok=true" >> "$GITHUB_OUTPUT"; fi
+      - name: Install
+        if: steps.probe.outputs.ok == 'true'
+        run: |
+          APT_OPTS="-o Acquire::Retries=5 -o Acquire::http::Timeout=30 -o Acquire::https::Timeout=30"
+          for i in 1 2 3; do
+            sudo apt-get update -qq $APT_OPTS && sudo apt-get install -y -qq $APT_OPTS ffmpeg fonts-noto-cjk && break
+            [ "$i" = 3 ] && exit 1
+            echo "apt failed (attempt $i), retrying in 60s"; sleep 60
+          done
+          pip install -r requirements.txt
+      - name: Re-render with SunHi / Nanami
+        if: steps.probe.outputs.ok == 'true'
+        run: python scripts/retts.py
+      - name: Publish (replace releases)
+        if: steps.probe.outputs.ok == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: scripts/publish_releases.sh
+      - name: Commit history
+        if: steps.probe.outputs.ok == 'true'
+        run: |
+          git config user.name "shorts-bot"
+          git config user.email "shorts-bot@users.noreply.github.com"
+          git add -A data
+          git diff --cached --quiet || git commit -m "chore: re-render with edge-tts voices $(date +%F)"
+          git pull --rebase -q && git push
+      - name: Notify (Issue)
+        if: steps.probe.outputs.ok == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh issue create --title "🔔 선희·나나미 음성으로 영상 재생성 완료 ($(date +%F))" --body-file retts_summary.md

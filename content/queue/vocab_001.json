@@ -1,0 +1,16 @@
+{
+  "theme": "朝のルーティン",
+  "hook": "지하철",
+  "words": [
+    {"word": "일어나다", "reading": "イロナダ", "meaning": "起きる", "example": "매일 아침 6시에 일어나요.", "example_ja": "毎朝6時に起きます。"},
+    {"word": "아침", "reading": "アチム", "meaning": "朝、朝ごはん", "example": "아침에 커피를 마셔요.", "example_ja": "朝コーヒーを飲みます。"},
+    {"word": "세수", "reading": "セス", "meaning": "洗顔", "example": "찬물로 세수를 해요.", "example_ja": "冷たい水で顔を洗います。"},
+    {"word": "옷", "reading": "オッ", "meaning": "服", "example": "옷을 갈아입었어요.", "example_ja": "服を着替えました。"},
+    {"word": "밥", "reading": "パプ", "meaning": "ごはん", "example": "아침밥은 빵이에요.", "example_ja": "朝ごはんはパンです。"},
+    {"word": "서두르다", "reading": "ソドゥルダ", "meaning": "急ぐ", "example": "서두르지 않으면 늦어요.", "example_ja": "急がないと遅れます。"},
+    {"word": "지하철", "reading": "チハチョル", "meaning": "地下鉄", "example": "지하철을 탔어요.", "example_ja": "地下鉄に乗りました。"},
+    {"word": "늦다", "reading": "ヌッタ", "meaning": "遅れる", "example": "오늘도 늦을 것 같아요.", "example_ja": "今日も遅れそうです。"},
+    {"word": "준비", "reading": "チュンビ", "meaning": "準備", "example": "외출 준비가 끝났어요.", "example_ja": "外出の準備が終わりました。"},
+    {"word": "나가다", "reading": "ナガダ", "meaning": "出かける", "example": "주말에는 가족과 나가요.", "example_ja": "週末は家族と出かけます。"}
+  ]
+}

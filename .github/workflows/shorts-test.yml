@@ -1,0 +1,59 @@
+name: shorts-test
+
+# 쇼츠 실험 버전 1개를 만들어 별도 Release(…_test)로 올림. 매일 생성/기록에는 영향 없음.
+on:
+  workflow_dispatch:
+    inputs:
+      file:
+        description: "단어 JSON 경로"
+        default: "content/samples/vocab_sample.json"
+      day:
+        description: "Day 번호"
+        default: "1"
+      end_cta:
+        description: "마무리: 단어표+구독 배너+나나미 음성 (1=켜기, 0=예전 방식)"
+        default: "1"
+      bgm:
+        description: "배경음 (1=켜기, 0=끄기)"
+        default: "0"
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Install
+        run: |
+          APT_OPTS="-o Acquire::Retries=5 -o Acquire::http::Timeout=30 -o Acquire::https::Timeout=30"
+          for i in 1 2 3; do
+            sudo apt-get update -qq $APT_OPTS && sudo apt-get install -y -qq $APT_OPTS ffmpeg fonts-noto-cjk && break
+            [ "$i" = 3 ] && exit 1
+            echo "apt failed (attempt $i), retrying in 60s"; sleep 60
+          done
+          pip install -r requirements.txt
+      - name: Render
+        env:
+          END_CTA: ${{ inputs.end_cta }}
+          BGM: ${{ inputs.bgm }}
+          TOPIK_LEVEL: ${{ vars.TOPIK_LEVEL || '初級' }}
+          CHANNEL_NAME: ${{ vars.CHANNEL_NAME || '毎日韓国語' }}
+          VOICE_KO: ${{ vars.VOICE_KO || 'ko-KR-SunHiNeural' }}
+          VOICE_JA: ${{ vars.VOICE_JA || 'ja-JP-NanamiNeural' }}
+        run: python -m shorts vocab --file "${{ inputs.file }}" --day "${{ inputs.day }}"
+      - name: Publish as test release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          n=$(printf "%03d" "${{ inputs.day }}")
+          mp4=$(ls output/*_day$n.mp4 | head -1); base="${mp4%.mp4}"; name=$(basename "$base"); tag="${name}_test"
+          for f in "$base".mp4 "$base"_thumb.jpg "$base".txt; do cp "$f" "${f/$name/$tag}"; done
+          gh release delete "$tag" -y --cleanup-tag 2>/dev/null || true
+          gh release create "$tag" "output/$tag.mp4" "output/${tag}_thumb.jpg" "output/$tag.txt" \
+            --title "[테스트] $(sed -n 2p "$base.txt")" --notes-file "$base.txt" --prerelease

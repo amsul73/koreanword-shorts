@@ -1,0 +1,57 @@
+name: longform
+
+# 롱폼 듣기 영상 수동 생성 → Releases (longform_dayNN)
+on:
+  workflow_dispatch:
+    inputs:
+      src:
+        description: "day JSON 파일 또는 폴더"
+        default: "longform/days/day01.json"
+      loops:
+        description: "단어+예문 파트 반복 횟수"
+        default: "1"
+      think:
+        description: "생각할 시간(초)"
+        default: "3"
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Install
+        run: |
+          APT_OPTS="-o Acquire::Retries=5 -o Acquire::http::Timeout=30 -o Acquire::https::Timeout=30"
+          for i in 1 2 3; do
+            sudo apt-get update -qq $APT_OPTS && sudo apt-get install -y -qq $APT_OPTS ffmpeg fonts-noto-cjk && break
+            [ "$i" = 3 ] && exit 1
+            echo "apt failed (attempt $i), retrying in 60s"; sleep 60
+          done
+          pip install -r requirements.txt
+      - name: Validate
+        run: python longform/make_listening_video.py "${{ inputs.src }}" --check || true
+      - name: Render
+        run: python longform/make_listening_video.py "${{ inputs.src }}" --loops "${{ inputs.loops }}" --think "${{ inputs.think }}" --out out
+      - name: Publish to Releases
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          shopt -s nullglob
+          for mp4 in out/day*_listening.mp4; do
+            stem="${mp4%.mp4}"; n=$(basename "$stem" | sed -E 's/day([0-9]+)_listening/\1/')
+            tag="longform_day$n"
+            files=("$mp4" "${stem}_description.txt")
+            if [ -d "${stem}_tts_check" ]; then
+              (cd "$(dirname "$stem")" && zip -qr "$(basename "$stem")_tts_check.zip" "$(basename "$stem")_tts_check")
+              files+=("${stem}_tts_check.zip")
+            fi
+            gh release delete "$tag" -y --cleanup-tag 2>/dev/null || true
+            gh release create "$tag" "${files[@]}" --title "롱폼 듣기 Day $n" --notes-file "${stem}_description.txt"
+          done

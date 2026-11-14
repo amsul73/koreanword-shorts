@@ -1,0 +1,101 @@
+name: daily-shorts
+
+# 매일 아침(KST 04시부터 시도) 단어 쇼츠 1개 + 왕초보 쇼츠 1개 + 롱폼 듣기 1개를 렌더 → GitHub Release로 올림.
+# 휴대폰에서 Releases 페이지 열고 mp4 다운로드 → 유튜브 앱으로 직접 업로드.
+on:
+  schedule:
+    # GitHub 예약 실행은 몇 시간씩 늦거나 건너뛰는 일이 잦아서,
+    # 오전 8시 전에 영상이 준비되도록 새벽부터 여러 번 시도한다.
+    # 그날(KST) 영상이 이미 있으면 바로 종료되므로 하루 1개만 생성됨.
+    - cron: "3 19 * * *"    # 04:03 KST
+    - cron: "3 21 * * *"    # 06:03 KST
+    - cron: "3 23 * * *"    # 08:03 KST
+    - cron: "3 1 * * *"     # 10:03 KST
+    - cron: "3 3 * * *"     # 12:03 KST
+    - cron: "3 6 * * *"     # 15:03 KST
+  workflow_dispatch:
+    inputs:
+      kind:
+        description: "vocab / grammar / voices(음성 샘플)"
+        default: "vocab"
+      count:
+        description: "몇 개 렌더할지"
+        default: "1"
+
+permissions:
+  contents: write
+
+concurrency: daily-shorts
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      TZ: Asia/Seoul   # 날짜 기록/중복 판단을 한국 날짜 기준으로 (KST = JST)
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Skip if today's video already exists
+        id: guard
+        if: github.event_name == 'schedule'
+        run: |
+          today=$(date +%F)
+          if python3 -c "import json,sys; h=json.load(open('data/history.json')); sys.exit(0 if any(r.get('date')=='$today' for r in h.get('rendered',[])) else 1)" 2>/dev/null; then
+            echo "오늘($today) 영상은 이미 생성됨 → 건너뜀"
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - uses: actions/setup-python@v6
+        if: steps.guard.outputs.skip != 'true'
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Install
+        if: steps.guard.outputs.skip != 'true'
+        run: |
+          APT_OPTS="-o Acquire::Retries=5 -o Acquire::http::Timeout=30 -o Acquire::https::Timeout=30"
+          for i in 1 2 3; do
+            sudo apt-get update -qq $APT_OPTS && sudo apt-get install -y -qq $APT_OPTS ffmpeg fonts-noto-cjk && break
+            [ "$i" = 3 ] && exit 1
+            echo "apt failed (attempt $i), retrying in 60s"; sleep 60
+          done
+          pip install -r requirements.txt
+
+      - name: Render
+        if: steps.guard.outputs.skip != 'true'
+        env:
+          TOPIK_LEVEL: ${{ vars.TOPIK_LEVEL || '初級' }}
+          CHANNEL_NAME: ${{ vars.CHANNEL_NAME || '毎日韓国語' }}
+          VOICE_KO: ${{ vars.VOICE_KO || 'ko-KR-SunHiNeural' }}
+          VOICE_JA: ${{ vars.VOICE_JA || 'ja-JP-NanamiNeural' }}
+        run: python -m shorts "${{ inputs.kind || 'vocab' }}" --count "${{ inputs.count || '1' }}"
+
+      - name: Render beginner shorts (왕초보, 1 per day)
+        if: steps.guard.outputs.skip != 'true' && (github.event_name == 'schedule' || inputs.kind == 'vocab')
+        continue-on-error: true
+        env:
+          TOPIK_LEVEL: ${{ vars.TOPIK_LEVEL || '初級' }}
+          CHANNEL_NAME: ${{ vars.CHANNEL_NAME || '毎日韓国語' }}
+          VOICE_KO: ${{ vars.VOICE_KO || 'ko-KR-SunHiNeural' }}
+          VOICE_JA: ${{ vars.VOICE_JA || 'ja-JP-NanamiNeural' }}
+        run: python -m shorts basic
+
+      - name: Render longform (1 per day)
+        continue-on-error: true   # 롱폼이 실패해도 쇼츠는 올라가도록
+        if: steps.guard.outputs.skip != 'true' && (github.event_name == 'schedule' || inputs.kind == 'vocab')
+        run: python longform/make_listening_video.py longform/days --daily --history data/history.json --out out
+
+      - name: Publish to Releases
+        if: steps.guard.outputs.skip != 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: scripts/publish_releases.sh
+
+      - name: Commit history
+        if: steps.guard.outputs.skip != 'true'
+        run: |
+          git config user.name "shorts-bot"
+          git config user.email "shorts-bot@users.noreply.github.com"
+          git add -A data content
+          git diff --cached --quiet || git commit -m "chore: render shorts $(date +%F)"
+          git push

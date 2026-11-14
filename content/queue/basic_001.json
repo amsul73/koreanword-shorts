@@ -1,0 +1,17 @@
+{
+  "series": "basic",
+  "theme": "動物",
+  "hook": "고양이",
+  "words": [
+    {"word": "고양이", "reading": "コヤンイ", "meaning": "ねこ", "example": "고양이를 좋아해요.", "example_ja": "ねこが好きです。"},
+    {"word": "개", "reading": "ケ", "meaning": "いぬ", "example": "개가 있어요.", "example_ja": "いぬがいます。"},
+    {"word": "새", "reading": "セ", "meaning": "とり", "example": "새가 날아요.", "example_ja": "とりが飛びます。"},
+    {"word": "물고기", "reading": "ムルコギ", "meaning": "さかな", "example": "물고기가 헤엄쳐요.", "example_ja": "さかなが泳ぎます。"},
+    {"word": "소", "reading": "ソ", "meaning": "うし", "example": "소는 커요.", "example_ja": "うしは大きいです。"},
+    {"word": "말", "reading": "マル", "meaning": "うま", "example": "말은 빨라요.", "example_ja": "うまは速いです。"},
+    {"word": "돼지", "reading": "テジ", "meaning": "ぶた", "example": "돼지가 자요.", "example_ja": "ぶたが寝ています。"},
+    {"word": "토끼", "reading": "トッキ", "meaning": "うさぎ", "example": "토끼는 귀여워요.", "example_ja": "うさぎはかわいいです。"},
+    {"word": "곰", "reading": "コム", "meaning": "くま", "example": "곰은 무서워요.", "example_ja": "くまは怖いです。"},
+    {"word": "코끼리", "reading": "コッキリ", "meaning": "ぞう", "example": "코끼리 코는 길어요.", "example_ja": "ぞうの鼻は長いです。"}
+  ]
+}

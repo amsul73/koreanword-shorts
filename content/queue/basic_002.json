@@ -1,0 +1,17 @@
+{
+  "series": "basic",
+  "theme": "色",
+  "hook": "빨간색",
+  "words": [
+    {"word": "빨간색", "reading": "ッパルガンセク", "meaning": "赤", "example": "빨간색 사과예요.", "example_ja": "赤いりんごです。"},
+    {"word": "파란색", "reading": "パランセク", "meaning": "青", "example": "하늘은 파란색이에요.", "example_ja": "空は青色です。"},
+    {"word": "노란색", "reading": "ノランセク", "meaning": "黄色", "example": "노란색 가방을 샀어요.", "example_ja": "黄色いかばんを買いました。"},
+    {"word": "검은색", "reading": "コムンセク", "meaning": "黒", "example": "검은색 신발을 신어요.", "example_ja": "黒い靴を履きます。"},
+    {"word": "흰색", "reading": "ヒンセク", "meaning": "白", "example": "흰색 티셔츠를 좋아해요.", "example_ja": "白いTシャツが好きです。"},
+    {"word": "초록색", "reading": "チョロクセク", "meaning": "緑", "example": "초록색 나무가 많아요.", "example_ja": "緑の木が多いです。"},
+    {"word": "보라색", "reading": "ポラセク", "meaning": "紫", "example": "보라색 꽃이 예뻐요.", "example_ja": "紫の花がきれいです。"},
+    {"word": "분홍색", "reading": "プノンセク", "meaning": "ピンク", "example": "분홍색 우산이 있어요.", "example_ja": "ピンクの傘があります。"},
+    {"word": "회색", "reading": "フェセク", "meaning": "灰色", "example": "회색 옷을 입었어요.", "example_ja": "灰色の服を着ました。"},
+    {"word": "갈색", "reading": "カルセク", "meaning": "茶色", "example": "갈색 가방이 비싸요.", "example_ja": "茶色のかばんが高いです。"}
+  ]
+}

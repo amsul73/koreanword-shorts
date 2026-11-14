@@ -1,0 +1,68 @@
+name: batch
+
+# 여러 날치를 한 번에 생성 (쇼츠 / 왕초보 / 롱폼 각각 N개) → Releases + 기록
+on:
+  workflow_dispatch:
+    inputs:
+      vocab:
+        description: "쇼츠 개수"
+        default: "10"
+      basic:
+        description: "왕초보 개수"
+        default: "10"
+      longform:
+        description: "롱폼 개수"
+        default: "10"
+
+permissions:
+  contents: write
+
+concurrency: daily-shorts
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    env:
+      TZ: Asia/Seoul
+      TOPIK_LEVEL: ${{ vars.TOPIK_LEVEL || '初級' }}
+      CHANNEL_NAME: ${{ vars.CHANNEL_NAME || '毎日韓国語' }}
+      VOICE_KO: ${{ vars.VOICE_KO || 'ko-KR-SunHiNeural' }}
+      VOICE_JA: ${{ vars.VOICE_JA || 'ja-JP-NanamiNeural' }}
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Install
+        run: |
+          APT_OPTS="-o Acquire::Retries=5 -o Acquire::http::Timeout=30 -o Acquire::https::Timeout=30"
+          for i in 1 2 3; do
+            sudo apt-get update -qq $APT_OPTS && sudo apt-get install -y -qq $APT_OPTS ffmpeg fonts-noto-cjk && break
+            [ "$i" = 3 ] && exit 1
+            echo "apt failed (attempt $i), retrying in 60s"; sleep 60
+          done
+          pip install -r requirements.txt
+      - name: Render shorts
+        run: python -m shorts vocab --count "${{ inputs.vocab }}"
+      - name: Render beginner shorts
+        run: python -m shorts basic --count "${{ inputs.basic }}"
+      - name: Render longform
+        run: |
+          for i in $(seq 1 "${{ inputs.longform }}"); do
+            python longform/make_listening_video.py longform/days --daily --history data/history.json --out out
+          done
+      - name: Publish to Releases
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: scripts/publish_releases.sh
+      - name: Commit history
+        if: always()
+        run: |
+          git config user.name "shorts-bot"
+          git config user.email "shorts-bot@users.noreply.github.com"
+          git add -A data content
+          git diff --cached --quiet || git commit -m "chore: batch render $(date +%F)"
+          git pull --rebase -q && git push
