@@ -25,6 +25,7 @@ import os
 import shutil
 import subprocess
 import sys
+import re
 import wave
 from functools import lru_cache
 from pathlib import Path
@@ -64,6 +65,9 @@ FONTS = {
                                    "/System/Library/Fonts/ヒラギノ角ゴシック W3.ttc"],
 }
 KO_MIN, KO_MAX = 56, 92      # 한국어 예문 폰트 범위 (최소까지 줄어들면 검증 경고)
+
+# reading 필드는 가타카나(+장음 ー, 중점 ・, 공백)만 허용
+KATAKANA_RE = re.compile(r"^[\u30A0-\u30FF\u31F0-\u31FF ]+$")
 
 
 @lru_cache(maxsize=None)
@@ -440,11 +444,15 @@ def validate(data, name=""):
         for k in ("word", "reading", "meaning", "examples"):
             if not w.get(k):
                 issues.append(f"단어 {i}: {k} 없음")
+        if w.get("reading") and not KATAKANA_RE.match(w["reading"]):
+            issues.append(f"단어 {i}({w.get('word')}): reading이 가타카나가 아님 → {w['reading']}")
         for j, ex in enumerate(w.get("examples", []), 1):
             tag = f"단어 {i}({w.get('word')}) 예문 {j}"
             for k in ("ko", "reading", "ja", "hl"):
                 if not ex.get(k):
                     issues.append(f"{tag}: {k} 없음")
+            if ex.get("reading") and not KATAKANA_RE.match(ex["reading"]):
+                issues.append(f"{tag}: reading이 가타카나가 아님 → {ex['reading']}")
             if ex.get("hl") and ex.get("ko") and ex["hl"] not in ex["ko"]:
                 issues.append(f"{tag}: hl '{ex['hl']}'이 한국어 문장에 없음")
             if ex.get("ko") and ko_size(ex["ko"]) <= KO_MIN:

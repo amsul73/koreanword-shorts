@@ -1,0 +1,17 @@
+{
+  "series": "basic",
+  "theme": "体",
+  "hook": "어깨",
+  "words": [
+    {"word": "머리", "reading": "モリ", "meaning": "頭", "example": "머리가 아파요.", "example_ja": "頭が痛いです。"},
+    {"word": "눈", "reading": "ヌン", "meaning": "目", "example": "눈이 커요.", "example_ja": "目が大きいです。"},
+    {"word": "코", "reading": "コ", "meaning": "鼻", "example": "코가 높아요.", "example_ja": "鼻が高いです。"},
+    {"word": "입", "reading": "イプ", "meaning": "口", "example": "입을 벌리세요.", "example_ja": "口を開けてください。"},
+    {"word": "귀", "reading": "クィ", "meaning": "耳", "example": "귀가 아파요.", "example_ja": "耳が痛いです。"},
+    {"word": "손", "reading": "ソン", "meaning": "手", "example": "손을 씻어요.", "example_ja": "手を洗います。"},
+    {"word": "발", "reading": "パル", "meaning": "足", "example": "발이 아파요.", "example_ja": "足が痛いです。"},
+    {"word": "배", "reading": "ペ", "meaning": "おなか", "example": "배가 고파요.", "example_ja": "おなかがすきました。"},
+    {"word": "다리", "reading": "タリ", "meaning": "脚", "example": "다리가 길어요.", "example_ja": "脚が長いです。"},
+    {"word": "어깨", "reading": "オッケ", "meaning": "肩", "example": "어깨가 무거워요.", "example_ja": "肩が重いです。"}
+  ]
+}

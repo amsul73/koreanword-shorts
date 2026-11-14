@@ -1,0 +1,17 @@
+{
+  "series": "basic",
+  "theme": "あいさつ",
+  "hook": "안녕하세요",
+  "words": [
+    {"word": "안녕하세요", "reading": "アンニョンハセヨ", "meaning": "こんにちは", "example": "안녕하세요!", "example_ja": "こんにちは！"},
+    {"word": "감사합니다", "reading": "カムサハムニダ", "meaning": "ありがとうございます", "example": "정말 감사합니다.", "example_ja": "本当にありがとうございます。"},
+    {"word": "죄송합니다", "reading": "チェソンハムニダ", "meaning": "すみません", "example": "늦어서 죄송합니다.", "example_ja": "遅れてすみません。"},
+    {"word": "네", "reading": "ネ", "meaning": "はい", "example": "네, 맞아요.", "example_ja": "はい、そうです。"},
+    {"word": "아니요", "reading": "アニヨ", "meaning": "いいえ", "example": "아니요, 괜찮아요.", "example_ja": "いいえ、大丈夫です。"},
+    {"word": "괜찮다", "reading": "クェンチャンタ", "meaning": "大丈夫だ", "example": "저는 괜찮아요.", "example_ja": "私は大丈夫です。"},
+    {"word": "반갑다", "reading": "パンガプタ", "meaning": "うれしい（会えて）", "example": "만나서 반가워요.", "example_ja": "お会いできてうれしいです。"},
+    {"word": "실례합니다", "reading": "シルレハムニダ", "meaning": "失礼します", "example": "실례합니다.", "example_ja": "失礼します。"},
+    {"word": "부탁하다", "reading": "プタカダ", "meaning": "お願いする", "example": "잘 부탁해요.", "example_ja": "よろしくお願いします。"},
+    {"word": "축하하다", "reading": "チュカハダ", "meaning": "祝う", "example": "생일 축하해요!", "example_ja": "お誕生日おめでとう！"}
+  ]
+}

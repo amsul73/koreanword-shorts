@@ -1,0 +1,16 @@
+{
+  "theme": "天気と季節",
+  "hook": "날씨",
+  "words": [
+    {"word": "날씨", "reading": "ナルッシ", "meaning": "天気", "example": "오늘 날씨가 좋아요.", "example_ja": "今日は天気がいいです。"},
+    {"word": "비", "reading": "ピ", "meaning": "雨", "example": "비가 와요.", "example_ja": "雨が降っています。"},
+    {"word": "눈", "reading": "ヌン", "meaning": "雪", "example": "눈이 많이 왔어요.", "example_ja": "雪がたくさん降りました。"},
+    {"word": "바람", "reading": "パラム", "meaning": "風", "example": "바람이 세요.", "example_ja": "風が強いです。"},
+    {"word": "덥다", "reading": "トプタ", "meaning": "暑い", "example": "오늘은 너무 더워요.", "example_ja": "今日は暑すぎます。"},
+    {"word": "춥다", "reading": "チュプタ", "meaning": "寒い", "example": "겨울은 추워요.", "example_ja": "冬は寒いです。"},
+    {"word": "봄", "reading": "ポム", "meaning": "春", "example": "봄이 왔어요.", "example_ja": "春が来ました。"},
+    {"word": "여름", "reading": "ヨルム", "meaning": "夏", "example": "여름을 좋아해요.", "example_ja": "夏が好きです。"},
+    {"word": "가을", "reading": "カウル", "meaning": "秋", "example": "가을 하늘이 예뻐요.", "example_ja": "秋の空がきれいです。"},
+    {"word": "겨울", "reading": "キョウル", "meaning": "冬", "example": "겨울에 눈이 와요.", "example_ja": "冬に雪が降ります。"}
+  ]
+}

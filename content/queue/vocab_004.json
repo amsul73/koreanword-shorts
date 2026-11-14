@@ -1,0 +1,16 @@
+{
+  "theme": "食べ物と味",
+  "hook": "젓가락",
+  "words": [
+    {"word": "맵다", "reading": "メプタ", "meaning": "辛い", "example": "김치가 너무 매워요.", "example_ja": "キムチが辛すぎます。"},
+    {"word": "달다", "reading": "タルダ", "meaning": "甘い", "example": "이 커피는 달아요.", "example_ja": "このコーヒーは甘いです。"},
+    {"word": "짜다", "reading": "ッチャダ", "meaning": "しょっぱい", "example": "국이 좀 짜요.", "example_ja": "スープが少ししょっぱいです。"},
+    {"word": "맛있다", "reading": "マシッタ", "meaning": "おいしい", "example": "정말 맛있어요!", "example_ja": "本当においしいです！"},
+    {"word": "배고프다", "reading": "ペゴプダ", "meaning": "お腹がすく", "example": "지금 배고파요.", "example_ja": "今おなかがすいています。"},
+    {"word": "시키다", "reading": "シキダ", "meaning": "注文する", "example": "뭐 시킬까요?", "example_ja": "何を頼みましょうか。"},
+    {"word": "반찬", "reading": "パンチャン", "meaning": "おかず", "example": "반찬이 많네요.", "example_ja": "おかずが多いですね。"},
+    {"word": "국물", "reading": "クンムル", "meaning": "スープ、汁", "example": "국물이 시원해요.", "example_ja": "スープがさっぱりしています。"},
+    {"word": "젓가락", "reading": "チョッカラク", "meaning": "はし", "example": "젓가락 주세요.", "example_ja": "はしをください。"},
+    {"word": "배부르다", "reading": "ペブルダ", "meaning": "お腹いっぱいだ", "example": "너무 배불러요.", "example_ja": "おなかいっぱいです。"}
+  ]
+}

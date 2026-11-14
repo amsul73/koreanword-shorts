@@ -1,0 +1,17 @@
+{
+  "series": "basic",
+  "theme": "家族",
+  "hook": "할아버지",
+  "words": [
+    {"word": "엄마", "reading": "オンマ", "meaning": "お母さん", "example": "엄마가 좋아요.", "example_ja": "お母さんが好きです。"},
+    {"word": "아빠", "reading": "アッパ", "meaning": "お父さん", "example": "아빠는 바빠요.", "example_ja": "お父さんは忙しいです。"},
+    {"word": "언니", "reading": "オンニ", "meaning": "姉（女性から）", "example": "언니가 예뻐요.", "example_ja": "姉がきれいです。"},
+    {"word": "오빠", "reading": "オッパ", "meaning": "兄（女性から）", "example": "오빠가 있어요.", "example_ja": "兄がいます。"},
+    {"word": "누나", "reading": "ヌナ", "meaning": "姉（男性から）", "example": "누나는 학생이에요.", "example_ja": "姉は学生です。"},
+    {"word": "형", "reading": "ヒョン", "meaning": "兄（男性から）", "example": "형이 왔어요.", "example_ja": "兄が来ました。"},
+    {"word": "동생", "reading": "トンセン", "meaning": "弟・妹", "example": "동생이 귀여워요.", "example_ja": "弟がかわいいです。"},
+    {"word": "할머니", "reading": "ハルモニ", "meaning": "おばあさん", "example": "할머니가 계세요.", "example_ja": "おばあさんがいます。"},
+    {"word": "할아버지", "reading": "ハラボジ", "meaning": "おじいさん", "example": "할아버지는 건강해요.", "example_ja": "おじいさんは元気です。"},
+    {"word": "가족", "reading": "カジョク", "meaning": "家族", "example": "가족이 네 명이에요.", "example_ja": "家族は四人です。"}
+  ]
+}

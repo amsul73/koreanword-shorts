@@ -11,10 +11,14 @@ content/queue/ 의 JSON을 이름순으로 하나씩 소비한다.
   example_ja 일본어 번역      (예: "コーヒーを注文します。")
 """
 import json
+import re
 import shutil
 from datetime import date
 
 from . import config
+
+# reading 필드는 가타카나(+장음 ー, 중점 ・, 공백)만 허용 → 히라가나/한글 섞여 들어가는 실수 차단
+KATAKANA_RE = re.compile(r"^[\u30A0-\u30FF\u31F0-\u31FF ]+$")
 
 
 def load_history():
@@ -39,6 +43,8 @@ def validate(kind, data):
         for w in data["words"]:
             for k in ("word", "reading", "meaning"):
                 assert w.get(k), f"단어 항목에 {k} 없음: {w}"
+            assert KATAKANA_RE.match(w["reading"]), \
+                f"reading은 가타카나로 적어야 합니다: {w['word']} → {w['reading']}"
     else:
         for k in ("title", "meaning", "form", "examples"):
             assert data.get(k), f"문법에 {k} 없음"

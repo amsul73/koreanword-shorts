@@ -1,0 +1,76 @@
+{
+  "theme": "道案内と交通",
+  "hook": "갈아타다",
+  "words": [
+    {
+      "word": "길",
+      "reading": "キル",
+      "meaning": "道",
+      "example": "길을 잃었어요.",
+      "example_ja": "道に迷いました。"
+    },
+    {
+      "word": "역",
+      "reading": "ヨク",
+      "meaning": "駅",
+      "example": "역이 어디예요?",
+      "example_ja": "駅はどこですか。"
+    },
+    {
+      "word": "버스",
+      "reading": "ポス",
+      "meaning": "バス",
+      "example": "버스를 기다려요.",
+      "example_ja": "バスを待っています。"
+    },
+    {
+      "word": "택시",
+      "reading": "テッシ",
+      "meaning": "タクシー",
+      "example": "택시를 탈까요?",
+      "example_ja": "タクシーに乗りましょうか。"
+    },
+    {
+      "word": "갈아타다",
+      "reading": "カラタダ",
+      "meaning": "乗り換える",
+      "example": "여기서 갈아타세요.",
+      "example_ja": "ここで乗り換えてください。"
+    },
+    {
+      "word": "오른쪽",
+      "reading": "オルンッチョク",
+      "meaning": "右",
+      "example": "오른쪽으로 가세요.",
+      "example_ja": "右に行ってください。"
+    },
+    {
+      "word": "왼쪽",
+      "reading": "ウェンッチョク",
+      "meaning": "左",
+      "example": "왼쪽에 있어요.",
+      "example_ja": "左にあります。"
+    },
+    {
+      "word": "직진",
+      "reading": "チッチン",
+      "meaning": "直進",
+      "example": "직진하세요.",
+      "example_ja": "まっすぐ行ってください。"
+    },
+    {
+      "word": "멀다",
+      "reading": "モルダ",
+      "meaning": "遠い",
+      "example": "여기서 멀어요?",
+      "example_ja": "ここから遠いですか。"
+    },
+    {
+      "word": "가깝다",
+      "reading": "カッカプタ",
+      "meaning": "近い",
+      "example": "아주 가까워요.",
+      "example_ja": "とても近いです。"
+    }
+  ]
+}

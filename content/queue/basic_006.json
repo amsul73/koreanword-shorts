@@ -1,0 +1,17 @@
+{
+  "series": "basic",
+  "theme": "食べ物",
+  "hook": "라면",
+  "words": [
+    {"word": "물", "reading": "ムル", "meaning": "水", "example": "물 주세요.", "example_ja": "水をください。"},
+    {"word": "김치", "reading": "キムチ", "meaning": "キムチ", "example": "김치가 매워요.", "example_ja": "キムチが辛いです。"},
+    {"word": "고기", "reading": "コギ", "meaning": "肉", "example": "고기를 먹어요.", "example_ja": "肉を食べます。"},
+    {"word": "빵", "reading": "ッパン", "meaning": "パン", "example": "빵이 맛있어요.", "example_ja": "パンがおいしいです。"},
+    {"word": "우유", "reading": "ウユ", "meaning": "牛乳", "example": "우유를 마셔요.", "example_ja": "牛乳を飲みます。"},
+    {"word": "과일", "reading": "クァイル", "meaning": "果物", "example": "과일을 좋아해요.", "example_ja": "果物が好きです。"},
+    {"word": "사과", "reading": "サグァ", "meaning": "りんご", "example": "사과가 빨개요.", "example_ja": "りんごが赤いです。"},
+    {"word": "계란", "reading": "ケラン", "meaning": "卵", "example": "계란을 삶아요.", "example_ja": "卵をゆでます。"},
+    {"word": "라면", "reading": "ラミョン", "meaning": "ラーメン", "example": "라면을 끓여요.", "example_ja": "ラーメンを作ります。"},
+    {"word": "커피", "reading": "コピ", "meaning": "コーヒー", "example": "커피를 마셔요.", "example_ja": "コーヒーを飲みます。"}
+  ]
+}

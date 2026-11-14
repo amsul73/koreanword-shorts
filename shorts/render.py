@@ -266,10 +266,13 @@ def vocab_review(data, cta=False):
         d.text((MARGIN + 70, y - 4), w["word"], font=fw, fill=C.TEXT)
         if w["reading"] != w["word"]:
             d.text((MARGIN + 70, y + fw.size + 8), w["reading"], font=fr, fill=C.SUB)
-        m = w["meaning"]
-        while text_w(d, m, fm) > 420 and len(m) > 1:
+        m, fm_row = w["meaning"], fm
+        # 긴 뜻은 먼저 글자를 줄여서 끼워 넣고, 그래도 안 되면 그때 잘라낸다
+        while text_w(d, m, fm_row) > 420 and fm_row.size > int(row_h * 0.26):
+            fm_row = font(fm_row.size - 2)
+        while text_w(d, m, fm_row) > 420 and len(m) > 1:
             m = m[:-2] + "…"
-        d.text((C.WIDTH - MARGIN - text_w(d, m, fm), y + 4), m, font=fm, fill=C.TEXT)
+        d.text((C.WIDTH - MARGIN - text_w(d, m, fm_row), y + 6), m, font=fm_row, fill=C.TEXT)
         y += row_h
     if cta:
         cta_banner(d, y=SAFE_BOTTOM - 20, text=cta_text(data))

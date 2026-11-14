@@ -1,0 +1,76 @@
+{
+  "theme": "気持ち",
+  "hook": "피곤하다",
+  "words": [
+    {
+      "word": "기쁘다",
+      "reading": "キップダ",
+      "meaning": "うれしい",
+      "example": "정말 기뻐요.",
+      "example_ja": "本当にうれしいです。"
+    },
+    {
+      "word": "슬프다",
+      "reading": "スルプダ",
+      "meaning": "悲しい",
+      "example": "조금 슬퍼요.",
+      "example_ja": "少し悲しいです。"
+    },
+    {
+      "word": "화나다",
+      "reading": "ファナダ",
+      "meaning": "怒る",
+      "example": "너무 화났어요.",
+      "example_ja": "とても怒りました。"
+    },
+    {
+      "word": "무섭다",
+      "reading": "ムソプタ",
+      "meaning": "怖い",
+      "example": "그 영화는 무서워요.",
+      "example_ja": "その映画は怖いです。"
+    },
+    {
+      "word": "재미있다",
+      "reading": "チェミイッタ",
+      "meaning": "面白い",
+      "example": "이 드라마 재미있어요.",
+      "example_ja": "このドラマ面白いです。"
+    },
+    {
+      "word": "심심하다",
+      "reading": "シムシマダ",
+      "meaning": "退屈だ",
+      "example": "오늘은 심심해요.",
+      "example_ja": "今日は退屈です。"
+    },
+    {
+      "word": "피곤하다",
+      "reading": "ピゴナダ",
+      "meaning": "疲れている",
+      "example": "너무 피곤해요.",
+      "example_ja": "とても疲れています。"
+    },
+    {
+      "word": "놀라다",
+      "reading": "ノルラダ",
+      "meaning": "驚く",
+      "example": "깜짝 놀랐어요.",
+      "example_ja": "びっくりしました。"
+    },
+    {
+      "word": "걱정",
+      "reading": "コッチョン",
+      "meaning": "心配",
+      "example": "걱정하지 마세요.",
+      "example_ja": "心配しないでください。"
+    },
+    {
+      "word": "행복",
+      "reading": "ヘンボク",
+      "meaning": "幸せ",
+      "example": "저는 행복해요.",
+      "example_ja": "私は幸せです。"
+    }
+  ]
+}
