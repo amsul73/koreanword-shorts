@@ -1,0 +1,17 @@
+{
+  "series": "basic",
+  "theme": "基本の動詞",
+  "hook": "마시다",
+  "words": [
+    {"word": "가다", "reading": "カダ", "meaning": "行く", "example": "학교에 가요.", "example_ja": "学校に行きます。"},
+    {"word": "오다", "reading": "オダ", "meaning": "来る", "example": "친구가 와요.", "example_ja": "友達が来ます。"},
+    {"word": "먹다", "reading": "モッタ", "meaning": "食べる", "example": "밥을 먹어요.", "example_ja": "ごはんを食べます。"},
+    {"word": "마시다", "reading": "マシダ", "meaning": "飲む", "example": "물을 마셔요.", "example_ja": "水を飲みます。"},
+    {"word": "보다", "reading": "ポダ", "meaning": "見る", "example": "영화를 봐요.", "example_ja": "映画を見ます。"},
+    {"word": "듣다", "reading": "トゥッタ", "meaning": "聞く", "example": "노래를 들어요.", "example_ja": "歌を聞きます。"},
+    {"word": "자다", "reading": "チャダ", "meaning": "寝る", "example": "일찍 자요.", "example_ja": "早く寝ます。"},
+    {"word": "읽다", "reading": "イッタ", "meaning": "読む", "example": "책을 읽어요.", "example_ja": "本を読みます。"},
+    {"word": "쓰다", "reading": "ッスダ", "meaning": "書く", "example": "편지를 써요.", "example_ja": "手紙を書きます。"},
+    {"word": "놀다", "reading": "ノルダ", "meaning": "遊ぶ", "example": "친구와 놀아요.", "example_ja": "友達と遊びます。"}
+  ]
+}

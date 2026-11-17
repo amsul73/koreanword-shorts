@@ -1,0 +1,16 @@
+{
+  "theme": "旅行とホテル",
+  "hook": "기념품",
+  "words": [
+    {"word": "여행", "reading": "ヨヘン", "meaning": "旅行", "example": "여행을 가고 싶어요.", "example_ja": "旅行に行きたいです。"},
+    {"word": "예약", "reading": "イェヤク", "meaning": "予約", "example": "호텔을 예약했어요.", "example_ja": "ホテルを予約しました。"},
+    {"word": "호텔", "reading": "ホテル", "meaning": "ホテル", "example": "호텔이 깨끗해요.", "example_ja": "ホテルがきれいです。"},
+    {"word": "짐", "reading": "チム", "meaning": "荷物", "example": "짐이 무거워요.", "example_ja": "荷物が重いです。"},
+    {"word": "여권", "reading": "ヨックォン", "meaning": "パスポート", "example": "여권을 보여 주세요.", "example_ja": "パスポートを見せてください。"},
+    {"word": "공항", "reading": "コンハン", "meaning": "空港", "example": "공항에 도착했어요.", "example_ja": "空港に着きました。"},
+    {"word": "비행기", "reading": "ピヘンギ", "meaning": "飛行機", "example": "비행기를 탔어요.", "example_ja": "飛行機に乗りました。"},
+    {"word": "사진", "reading": "サジン", "meaning": "写真", "example": "사진을 찍어요.", "example_ja": "写真を撮ります。"},
+    {"word": "구경", "reading": "クギョン", "meaning": "見物", "example": "시내 구경을 해요.", "example_ja": "市内見物をします。"},
+    {"word": "기념품", "reading": "キニョムプム", "meaning": "お土産", "example": "기념품을 샀어요.", "example_ja": "お土産を買いました。"}
+  ]
+}

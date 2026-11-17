@@ -1,0 +1,17 @@
+{
+  "series": "basic",
+  "theme": "家の中",
+  "hook": "냉장고",
+  "words": [
+    {"word": "문", "reading": "ムン", "meaning": "ドア", "example": "문을 열어요.", "example_ja": "ドアを開けます。"},
+    {"word": "침대", "reading": "チムデ", "meaning": "ベッド", "example": "침대에서 자요.", "example_ja": "ベッドで寝ます。"},
+    {"word": "소파", "reading": "ソパ", "meaning": "ソファ", "example": "소파에 앉아요.", "example_ja": "ソファに座ります。"},
+    {"word": "냉장고", "reading": "ネンジャンゴ", "meaning": "冷蔵庫", "example": "냉장고에 넣어요.", "example_ja": "冷蔵庫に入れます。"},
+    {"word": "화장실", "reading": "ファジャンシル", "meaning": "トイレ", "example": "화장실이 어디예요?", "example_ja": "トイレはどこですか。"},
+    {"word": "부엌", "reading": "プオク", "meaning": "台所", "example": "부엌에서 요리해요.", "example_ja": "台所で料理します。"},
+    {"word": "거실", "reading": "コシル", "meaning": "リビング", "example": "거실이 밝아요.", "example_ja": "リビングが明るいです。"},
+    {"word": "텔레비전", "reading": "テルレビジョン", "meaning": "テレビ", "example": "텔레비전을 봐요.", "example_ja": "テレビを見ます。"},
+    {"word": "열쇠", "reading": "ヨルッスェ", "meaning": "鍵", "example": "열쇠가 없어요.", "example_ja": "鍵がありません。"},
+    {"word": "거울", "reading": "コウル", "meaning": "鏡", "example": "거울을 봐요.", "example_ja": "鏡を見ます。"}
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "series": "basic",
+  "theme": "学校のもの",
+  "hook": "지우개",
+  "words": [
+    {"word": "책", "reading": "チェク", "meaning": "本", "example": "책을 읽어요.", "example_ja": "本を読みます。"},
+    {"word": "연필", "reading": "ヨンピル", "meaning": "鉛筆", "example": "연필로 써요.", "example_ja": "鉛筆で書きます。"},
+    {"word": "공책", "reading": "コンチェク", "meaning": "ノート", "example": "공책에 썼어요.", "example_ja": "ノートに書きました。"},
+    {"word": "의자", "reading": "ウィジャ", "meaning": "いす", "example": "의자에 앉아요.", "example_ja": "いすに座ります。"},
+    {"word": "책상", "reading": "チェッサン", "meaning": "机", "example": "책상이 커요.", "example_ja": "机が大きいです。"},
+    {"word": "시계", "reading": "シゲ", "meaning": "時計", "example": "시계를 봐요.", "example_ja": "時計を見ます。"},
+    {"word": "칠판", "reading": "チルパン", "meaning": "黒板", "example": "칠판을 봐요.", "example_ja": "黒板を見ます。"},
+    {"word": "지우개", "reading": "チウゲ", "meaning": "消しゴム", "example": "지우개를 빌려요.", "example_ja": "消しゴムを借ります。"},
+    {"word": "필통", "reading": "ピルトン", "meaning": "筆箱", "example": "필통이 작아요.", "example_ja": "筆箱が小さいです。"},
+    {"word": "교실", "reading": "キョシル", "meaning": "教室", "example": "교실이 조용해요.", "example_ja": "教室が静かです。"}
+  ]
+}

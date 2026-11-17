@@ -1,0 +1,16 @@
+{
+  "theme": "趣味と週末",
+  "hook": "쇼핑",
+  "words": [
+    {"word": "취미", "reading": "チュィミ", "meaning": "趣味", "example": "취미가 뭐예요?", "example_ja": "趣味は何ですか。"},
+    {"word": "운동", "reading": "ウンドン", "meaning": "運動", "example": "매일 운동해요.", "example_ja": "毎日運動します。"},
+    {"word": "영화", "reading": "ヨンファ", "meaning": "映画", "example": "영화를 봐요.", "example_ja": "映画を見ます。"},
+    {"word": "노래", "reading": "ノレ", "meaning": "歌", "example": "노래를 불러요.", "example_ja": "歌を歌います。"},
+    {"word": "산책", "reading": "サンチェク", "meaning": "散歩", "example": "공원을 산책해요.", "example_ja": "公園を散歩します。"},
+    {"word": "요리", "reading": "ヨリ", "meaning": "料理", "example": "요리를 배워요.", "example_ja": "料理を習います。"},
+    {"word": "그림", "reading": "クリム", "meaning": "絵", "example": "그림을 그려요.", "example_ja": "絵を描きます。"},
+    {"word": "쇼핑", "reading": "ショピン", "meaning": "ショッピング", "example": "주말에 쇼핑해요.", "example_ja": "週末にショッピングします。"},
+    {"word": "게임", "reading": "ケイム", "meaning": "ゲーム", "example": "게임을 좋아해요.", "example_ja": "ゲームが好きです。"},
+    {"word": "모이다", "reading": "モイダ", "meaning": "集まる", "example": "친구들이 모였어요.", "example_ja": "友達が集まりました。"}
+  ]
+}

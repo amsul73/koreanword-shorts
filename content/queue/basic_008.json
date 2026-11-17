@@ -1,0 +1,17 @@
+{
+  "series": "basic",
+  "theme": "曜日",
+  "hook": "월요일",
+  "words": [
+    {"word": "월요일", "reading": "ウォリョイル", "meaning": "月曜日", "example": "오늘은 월요일이에요.", "example_ja": "今日は月曜日です。"},
+    {"word": "화요일", "reading": "ファヨイル", "meaning": "火曜日", "example": "화요일에 만나요.", "example_ja": "火曜日に会います。"},
+    {"word": "수요일", "reading": "スヨイル", "meaning": "水曜日", "example": "수요일은 바빠요.", "example_ja": "水曜日は忙しいです。"},
+    {"word": "목요일", "reading": "モギョイル", "meaning": "木曜日", "example": "목요일에 시험이 있어요.", "example_ja": "木曜日に試験があります。"},
+    {"word": "금요일", "reading": "クミョイル", "meaning": "金曜日", "example": "금요일이 좋아요.", "example_ja": "金曜日が好きです。"},
+    {"word": "토요일", "reading": "トヨイル", "meaning": "土曜日", "example": "토요일에 쉬어요.", "example_ja": "土曜日に休みます。"},
+    {"word": "일요일", "reading": "イリョイル", "meaning": "日曜日", "example": "일요일에 자요.", "example_ja": "日曜日に寝ます。"},
+    {"word": "주말", "reading": "チュマル", "meaning": "週末", "example": "주말이 좋아요.", "example_ja": "週末がいいです。"},
+    {"word": "오늘", "reading": "オヌル", "meaning": "今日", "example": "오늘 날씨가 좋아요.", "example_ja": "今日は天気がいいです。"},
+    {"word": "내일", "reading": "ネイル", "meaning": "明日", "example": "내일 만나요.", "example_ja": "明日会います。"}
+  ]
+}

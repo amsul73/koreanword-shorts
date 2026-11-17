@@ -1,0 +1,16 @@
+{
+  "theme": "家と部屋",
+  "hook": "창문",
+  "words": [
+    {"word": "집", "reading": "チプ", "meaning": "家", "example": "집에 가요.", "example_ja": "家に帰ります。"},
+    {"word": "방", "reading": "パン", "meaning": "部屋", "example": "방이 넓어요.", "example_ja": "部屋が広いです。"},
+    {"word": "창문", "reading": "チャンムン", "meaning": "窓", "example": "창문을 열었어요.", "example_ja": "窓を開けました。"},
+    {"word": "청소", "reading": "チョンソ", "meaning": "掃除", "example": "방 청소를 해요.", "example_ja": "部屋の掃除をします。"},
+    {"word": "빨래", "reading": "ッパルレ", "meaning": "洗濯", "example": "빨래를 널어요.", "example_ja": "洗濯物を干します。"},
+    {"word": "이사", "reading": "イサ", "meaning": "引っ越し", "example": "다음 달에 이사해요.", "example_ja": "来月引っ越します。"},
+    {"word": "월세", "reading": "ウォルッセ", "meaning": "家賃", "example": "월세가 비싸요.", "example_ja": "家賃が高いです。"},
+    {"word": "가구", "reading": "カグ", "meaning": "家具", "example": "가구를 샀어요.", "example_ja": "家具を買いました。"},
+    {"word": "넓다", "reading": "ノルタ", "meaning": "広い", "example": "거실이 넓어요.", "example_ja": "リビングが広いです。"},
+    {"word": "좁다", "reading": "チョプタ", "meaning": "狭い", "example": "방이 좀 좁아요.", "example_ja": "部屋が少し狭いです。"}
+  ]
+}

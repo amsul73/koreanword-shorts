@@ -1,0 +1,16 @@
+{
+  "theme": "服と外見",
+  "hook": "머리카락",
+  "words": [
+    {"word": "입다", "reading": "イプタ", "meaning": "着る", "example": "코트를 입었어요.", "example_ja": "コートを着ました。"},
+    {"word": "신다", "reading": "シンタ", "meaning": "履く", "example": "운동화를 신어요.", "example_ja": "スニーカーを履きます。"},
+    {"word": "어울리다", "reading": "オウルリダ", "meaning": "似合う", "example": "그 옷이 잘 어울려요.", "example_ja": "その服がよく似合います。"},
+    {"word": "예쁘다", "reading": "イェップダ", "meaning": "きれいだ", "example": "정말 예뻐요.", "example_ja": "本当にきれいです。"},
+    {"word": "멋있다", "reading": "モシッタ", "meaning": "かっこいい", "example": "아주 멋있어요.", "example_ja": "とてもかっこいいです。"},
+    {"word": "머리카락", "reading": "モリカラク", "meaning": "髪", "example": "머리카락이 길어요.", "example_ja": "髪が長いです。"},
+    {"word": "안경", "reading": "アンギョン", "meaning": "めがね", "example": "안경을 썼어요.", "example_ja": "めがねをかけました。"},
+    {"word": "모자", "reading": "モジャ", "meaning": "帽子", "example": "모자를 썼어요.", "example_ja": "帽子をかぶりました。"},
+    {"word": "신발", "reading": "シンバル", "meaning": "靴", "example": "신발이 편해요.", "example_ja": "靴が楽です。"},
+    {"word": "가방", "reading": "カバン", "meaning": "かばん", "example": "가방을 들었어요.", "example_ja": "かばんを持ちました。"}
+  ]
+}

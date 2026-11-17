@@ -1,0 +1,16 @@
+{
+  "theme": "体調と病院",
+  "hook": "병원",
+  "words": [
+    {"word": "아프다", "reading": "アプダ", "meaning": "痛い、具合が悪い", "example": "배가 아파요.", "example_ja": "おなかが痛いです。"},
+    {"word": "감기", "reading": "カムギ", "meaning": "風邪", "example": "감기에 걸렸어요.", "example_ja": "風邪をひきました。"},
+    {"word": "병원", "reading": "ピョンウォン", "meaning": "病院", "example": "병원에 갔어요.", "example_ja": "病院に行きました。"},
+    {"word": "약", "reading": "ヤク", "meaning": "薬", "example": "약을 먹어요.", "example_ja": "薬を飲みます。"},
+    {"word": "열", "reading": "ヨル", "meaning": "熱", "example": "열이 나요.", "example_ja": "熱が出ます。"},
+    {"word": "기침", "reading": "キチム", "meaning": "咳", "example": "기침이 심해요.", "example_ja": "咳がひどいです。"},
+    {"word": "낫다", "reading": "ナッタ", "meaning": "治る", "example": "빨리 나으세요.", "example_ja": "早く治ってください。"},
+    {"word": "다치다", "reading": "タチダ", "meaning": "けがをする", "example": "다리를 다쳤어요.", "example_ja": "足をけがしました。"},
+    {"word": "건강", "reading": "コンガン", "meaning": "健康", "example": "건강이 제일 중요해요.", "example_ja": "健康が一番大事です。"},
+    {"word": "주사", "reading": "チュサ", "meaning": "注射", "example": "주사를 맞았어요.", "example_ja": "注射を打ちました。"}
+  ]
+}

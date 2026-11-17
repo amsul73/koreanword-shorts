@@ -1,0 +1,17 @@
+{
+  "series": "basic",
+  "theme": "形容詞",
+  "hook": "나쁘다",
+  "words": [
+    {"word": "크다", "reading": "クダ", "meaning": "大きい", "example": "집이 커요.", "example_ja": "家が大きいです。"},
+    {"word": "작다", "reading": "チャッタ", "meaning": "小さい", "example": "방이 작아요.", "example_ja": "部屋が小さいです。"},
+    {"word": "많다", "reading": "マンタ", "meaning": "多い", "example": "사람이 많아요.", "example_ja": "人が多いです。"},
+    {"word": "적다", "reading": "チョッタ", "meaning": "少ない", "example": "돈이 적어요.", "example_ja": "お金が少ないです。"},
+    {"word": "길다", "reading": "キルダ", "meaning": "長い", "example": "머리가 길어요.", "example_ja": "髪が長いです。"},
+    {"word": "짧다", "reading": "ッチャルタ", "meaning": "短い", "example": "치마가 짧아요.", "example_ja": "スカートが短いです。"},
+    {"word": "높다", "reading": "ノプタ", "meaning": "高い", "example": "산이 높아요.", "example_ja": "山が高いです。"},
+    {"word": "낮다", "reading": "ナッタ", "meaning": "低い", "example": "의자가 낮아요.", "example_ja": "いすが低いです。"},
+    {"word": "좋다", "reading": "チョタ", "meaning": "良い", "example": "날씨가 좋아요.", "example_ja": "天気がいいです。"},
+    {"word": "나쁘다", "reading": "ナップダ", "meaning": "悪い", "example": "기분이 나빠요.", "example_ja": "気分が悪いです。"}
+  ]
+}

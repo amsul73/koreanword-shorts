@@ -1,0 +1,16 @@
+{
+  "theme": "仕事と学校",
+  "hook": "가르치다",
+  "words": [
+    {"word": "회사", "reading": "フェサ", "meaning": "会社", "example": "회사에 다녀요.", "example_ja": "会社に通っています。"},
+    {"word": "일하다", "reading": "イラダ", "meaning": "働く", "example": "주말에도 일해요.", "example_ja": "週末も働きます。"},
+    {"word": "회의", "reading": "フェイ", "meaning": "会議", "example": "회의가 길었어요.", "example_ja": "会議が長かったです。"},
+    {"word": "쉬다", "reading": "スィダ", "meaning": "休む", "example": "오늘은 쉬어요.", "example_ja": "今日は休みます。"},
+    {"word": "바쁘다", "reading": "パップダ", "meaning": "忙しい", "example": "요즘 바빠요.", "example_ja": "最近忙しいです。"},
+    {"word": "숙제", "reading": "スッチェ", "meaning": "宿題", "example": "숙제를 했어요.", "example_ja": "宿題をしました。"},
+    {"word": "시험", "reading": "シホム", "meaning": "試験", "example": "시험이 어려웠어요.", "example_ja": "試験が難しかったです。"},
+    {"word": "배우다", "reading": "ペウダ", "meaning": "習う", "example": "한국어를 배워요.", "example_ja": "韓国語を習います。"},
+    {"word": "가르치다", "reading": "カルチダ", "meaning": "教える", "example": "영어를 가르쳐요.", "example_ja": "英語を教えます。"},
+    {"word": "월급", "reading": "ウォルグプ", "meaning": "給料", "example": "월급을 받았어요.", "example_ja": "給料をもらいました。"}
+  ]
+}

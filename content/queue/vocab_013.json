@@ -1,0 +1,16 @@
+{
+  "theme": "電話と約束",
+  "hook": "연락",
+  "words": [
+    {"word": "전화", "reading": "チョヌァ", "meaning": "電話", "example": "전화를 걸었어요.", "example_ja": "電話をかけました。"},
+    {"word": "약속", "reading": "ヤッソク", "meaning": "約束", "example": "오늘 약속이 있어요.", "example_ja": "今日約束があります。"},
+    {"word": "만나다", "reading": "マンナダ", "meaning": "会う", "example": "내일 만나요.", "example_ja": "明日会います。"},
+    {"word": "기다리다", "reading": "キダリダ", "meaning": "待つ", "example": "조금만 기다려 주세요.", "example_ja": "少し待ってください。"},
+    {"word": "문자", "reading": "ムンッチャ", "meaning": "ショートメール", "example": "문자를 보냈어요.", "example_ja": "メッセージを送りました。"},
+    {"word": "바꾸다", "reading": "パックダ", "meaning": "変える", "example": "약속을 바꿨어요.", "example_ja": "約束を変えました。"},
+    {"word": "취소", "reading": "チュィソ", "meaning": "取り消し", "example": "예약을 취소했어요.", "example_ja": "予約を取り消しました。"},
+    {"word": "받다", "reading": "パッタ", "meaning": "受ける、出る", "example": "전화를 받으세요.", "example_ja": "電話に出てください。"},
+    {"word": "끊다", "reading": "ックンタ", "meaning": "切る", "example": "전화를 끊었어요.", "example_ja": "電話を切りました。"},
+    {"word": "연락", "reading": "ヨルラク", "meaning": "連絡", "example": "나중에 연락할게요.", "example_ja": "あとで連絡します。"}
+  ]
+}

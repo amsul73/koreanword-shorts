@@ -1,0 +1,17 @@
+{
+  "series": "basic",
+  "theme": "時間",
+  "hook": "시간",
+  "words": [
+    {"word": "시", "reading": "シ", "meaning": "〜時", "example": "지금 몇 시예요?", "example_ja": "今何時ですか。"},
+    {"word": "분", "reading": "プン", "meaning": "〜分", "example": "십 분 남았어요.", "example_ja": "十分残っています。"},
+    {"word": "낮", "reading": "ナッ", "meaning": "昼", "example": "낮에 만나요.", "example_ja": "昼に会います。"},
+    {"word": "밤", "reading": "パム", "meaning": "夜", "example": "밤에 자요.", "example_ja": "夜に寝ます。"},
+    {"word": "오전", "reading": "オジョン", "meaning": "午前", "example": "오전에 회의가 있어요.", "example_ja": "午前に会議があります。"},
+    {"word": "오후", "reading": "オフ", "meaning": "午後", "example": "오후에 만나요.", "example_ja": "午後に会います。"},
+    {"word": "어제", "reading": "オジェ", "meaning": "昨日", "example": "어제 비가 왔어요.", "example_ja": "昨日雨が降りました。"},
+    {"word": "지금", "reading": "チグム", "meaning": "今", "example": "지금 가요.", "example_ja": "今行きます。"},
+    {"word": "매일", "reading": "メイル", "meaning": "毎日", "example": "매일 운동해요.", "example_ja": "毎日運動します。"},
+    {"word": "시간", "reading": "シガン", "meaning": "時間", "example": "시간이 없어요.", "example_ja": "時間がありません。"}
+  ]
+}

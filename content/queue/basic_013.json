@@ -1,0 +1,17 @@
+{
+  "series": "basic",
+  "theme": "場所",
+  "hook": "도서관",
+  "words": [
+    {"word": "학교", "reading": "ハッキョ", "meaning": "学校", "example": "학교에 가요.", "example_ja": "学校に行きます。"},
+    {"word": "은행", "reading": "ウネン", "meaning": "銀行", "example": "은행에 가요.", "example_ja": "銀行に行きます。"},
+    {"word": "가게", "reading": "カゲ", "meaning": "店", "example": "가게에서 샀어요.", "example_ja": "店で買いました。"},
+    {"word": "공원", "reading": "コンウォン", "meaning": "公園", "example": "공원에서 놀아요.", "example_ja": "公園で遊びます。"},
+    {"word": "시장", "reading": "シジャン", "meaning": "市場", "example": "시장이 가까워요.", "example_ja": "市場が近いです。"},
+    {"word": "극장", "reading": "クッチャン", "meaning": "映画館", "example": "극장에 갔어요.", "example_ja": "映画館に行きました。"},
+    {"word": "도서관", "reading": "トソグァン", "meaning": "図書館", "example": "도서관에서 공부해요.", "example_ja": "図書館で勉強します。"},
+    {"word": "우체국", "reading": "ウチェグク", "meaning": "郵便局", "example": "우체국에 가요.", "example_ja": "郵便局に行きます。"},
+    {"word": "식당", "reading": "シッタン", "meaning": "食堂", "example": "식당에서 먹어요.", "example_ja": "食堂で食べます。"},
+    {"word": "바다", "reading": "パダ", "meaning": "海", "example": "바다에 가고 싶어요.", "example_ja": "海に行きたいです。"}
+  ]
+}
