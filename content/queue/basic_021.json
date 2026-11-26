@@ -1,0 +1,17 @@
+{
+  "series": "basic",
+  "theme": "疑問詞",
+  "hook": "어떻게",
+  "words": [
+    {"word": "뭐", "reading": "ムォ", "meaning": "何", "example": "이게 뭐예요?", "example_ja": "これは何ですか。"},
+    {"word": "누구", "reading": "ヌグ", "meaning": "誰", "example": "저분이 누구예요?", "example_ja": "あの方は誰ですか。"},
+    {"word": "어디", "reading": "オディ", "meaning": "どこ", "example": "어디에 가요?", "example_ja": "どこに行きますか。"},
+    {"word": "언제", "reading": "オンジェ", "meaning": "いつ", "example": "언제 만나요?", "example_ja": "いつ会いますか。"},
+    {"word": "왜", "reading": "ウェ", "meaning": "なぜ", "example": "왜 늦었어요?", "example_ja": "なぜ遅れましたか。"},
+    {"word": "어떻게", "reading": "オットケ", "meaning": "どうやって", "example": "어떻게 가요?", "example_ja": "どうやって行きますか。"},
+    {"word": "얼마", "reading": "オルマ", "meaning": "いくら", "example": "이거 얼마예요?", "example_ja": "これいくらですか。"},
+    {"word": "몇", "reading": "ミョッ", "meaning": "いくつ", "example": "몇 개예요?", "example_ja": "何個ですか。"},
+    {"word": "어느", "reading": "オヌ", "meaning": "どの", "example": "어느 것이에요?", "example_ja": "どれですか。"},
+    {"word": "무슨", "reading": "ムスン", "meaning": "何の", "example": "무슨 일이에요?", "example_ja": "何のことですか。"}
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "theme": "スマホとネット",
+  "hook": "인터넷",
+  "words": [
+    {"word": "휴대폰", "reading": "ヒュデポン", "meaning": "携帯電話", "example": "휴대폰을 샀어요.", "example_ja": "携帯を買いました。"},
+    {"word": "충전", "reading": "チュンジョン", "meaning": "充電", "example": "충전해야 해요.", "example_ja": "充電しなければなりません。"},
+    {"word": "인터넷", "reading": "イントネッ", "meaning": "インターネット", "example": "인터넷이 느려요.", "example_ja": "インターネットが遅いです。"},
+    {"word": "검색", "reading": "コムセク", "meaning": "検索", "example": "검색해 보세요.", "example_ja": "検索してみてください。"},
+    {"word": "영상", "reading": "ヨンサン", "meaning": "動画", "example": "영상을 봤어요.", "example_ja": "動画を見ました。"},
+    {"word": "올리다", "reading": "オルリダ", "meaning": "アップする", "example": "사진을 올렸어요.", "example_ja": "写真をアップしました。"},
+    {"word": "댓글", "reading": "テックル", "meaning": "コメント", "example": "댓글을 달았어요.", "example_ja": "コメントを書きました。"},
+    {"word": "구독", "reading": "クドク", "meaning": "チャンネル登録", "example": "구독해 주세요.", "example_ja": "チャンネル登録してください。"},
+    {"word": "알림", "reading": "アルリム", "meaning": "通知", "example": "알림이 왔어요.", "example_ja": "通知が来ました。"},
+    {"word": "앱", "reading": "エプ", "meaning": "アプリ", "example": "앱을 깔았어요.", "example_ja": "アプリを入れました。"}
+  ]
+}

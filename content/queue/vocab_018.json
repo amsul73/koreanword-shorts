@@ -1,0 +1,16 @@
+{
+  "theme": "食堂で",
+  "hook": "물수건",
+  "words": [
+    {"word": "메뉴", "reading": "メニュ", "meaning": "メニュー", "example": "메뉴 좀 주세요.", "example_ja": "メニューをください。"},
+    {"word": "인분", "reading": "インブン", "meaning": "〜人前", "example": "삼 인분 주세요.", "example_ja": "三人前ください。"},
+    {"word": "맛", "reading": "マッ", "meaning": "味", "example": "맛이 어때요?", "example_ja": "味はどうですか。"},
+    {"word": "공기", "reading": "コンギ", "meaning": "ごはん一杯", "example": "공기 하나 더 주세요.", "example_ja": "ごはんをもう一杯ください。"},
+    {"word": "남기다", "reading": "ナムギダ", "meaning": "残す", "example": "음식을 남겼어요.", "example_ja": "食べ物を残しました。"},
+    {"word": "나누다", "reading": "ナヌダ", "meaning": "分ける", "example": "같이 나눠 먹어요.", "example_ja": "一緒に分けて食べます。"},
+    {"word": "소주", "reading": "ソジュ", "meaning": "焼酎", "example": "소주 한 병 주세요.", "example_ja": "焼酎を一本ください。"},
+    {"word": "안주", "reading": "アンジュ", "meaning": "つまみ", "example": "안주를 시켰어요.", "example_ja": "つまみを頼みました。"},
+    {"word": "물수건", "reading": "ムルッスゴン", "meaning": "おしぼり", "example": "물수건 주세요.", "example_ja": "おしぼりをください。"},
+    {"word": "배달", "reading": "ペダル", "meaning": "配達", "example": "배달이 빨라요.", "example_ja": "配達が早いです。"}
+  ]
+}

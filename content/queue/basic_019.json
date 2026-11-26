@@ -1,0 +1,17 @@
+{
+  "series": "basic",
+  "theme": "基本の動詞2",
+  "hook": "걷다",
+  "words": [
+    {"word": "사다", "reading": "サダ", "meaning": "買う", "example": "빵을 사요.", "example_ja": "パンを買います。"},
+    {"word": "팔다", "reading": "パルダ", "meaning": "売る", "example": "과일을 팔아요.", "example_ja": "果物を売ります。"},
+    {"word": "주다", "reading": "チュダ", "meaning": "あげる", "example": "선물을 줘요.", "example_ja": "プレゼントをあげます。"},
+    {"word": "열다", "reading": "ヨルダ", "meaning": "開ける", "example": "문을 열어요.", "example_ja": "ドアを開けます。"},
+    {"word": "닫다", "reading": "タッタ", "meaning": "閉める", "example": "창문을 닫아요.", "example_ja": "窓を閉めます。"},
+    {"word": "앉다", "reading": "アンタ", "meaning": "座る", "example": "의자에 앉아요.", "example_ja": "いすに座ります。"},
+    {"word": "서다", "reading": "ソダ", "meaning": "立つ", "example": "여기에 서세요.", "example_ja": "ここに立ってください。"},
+    {"word": "걷다", "reading": "コッタ", "meaning": "歩く", "example": "천천히 걸어요.", "example_ja": "ゆっくり歩きます。"},
+    {"word": "뛰다", "reading": "ットゥィダ", "meaning": "走る", "example": "빨리 뛰어요.", "example_ja": "速く走ります。"},
+    {"word": "웃다", "reading": "ウッタ", "meaning": "笑う", "example": "크게 웃어요.", "example_ja": "大きく笑います。"}
+  ]
+}

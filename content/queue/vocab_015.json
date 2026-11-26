@@ -1,0 +1,76 @@
+{
+  "theme": "友達と人間関係",
+  "hook": "친구",
+  "words": [
+    {
+      "word": "친구",
+      "reading": "チング",
+      "meaning": "友達",
+      "example": "친구가 많아요.",
+      "example_ja": "友達が多いです。"
+    },
+    {
+      "word": "사귀다",
+      "reading": "サグィダ",
+      "meaning": "付き合う",
+      "example": "좋은 친구를 사귀었어요.",
+      "example_ja": "いい友達ができました。"
+    },
+    {
+      "word": "소개",
+      "reading": "ソゲ",
+      "meaning": "紹介",
+      "example": "친구를 소개할게요.",
+      "example_ja": "友達を紹介します。"
+    },
+    {
+      "word": "성격",
+      "reading": "ソンキョク",
+      "meaning": "性格",
+      "example": "성격이 좋아요.",
+      "example_ja": "性格がいいです。"
+    },
+    {
+      "word": "같이",
+      "reading": "カチ",
+      "meaning": "一緒に",
+      "example": "같이 가요.",
+      "example_ja": "一緒に行きます。"
+    },
+    {
+      "word": "돕다",
+      "reading": "トプタ",
+      "meaning": "助ける",
+      "example": "친구를 도와줬어요.",
+      "example_ja": "友達を助けました。"
+    },
+    {
+      "word": "싸우다",
+      "reading": "ッサウダ",
+      "meaning": "けんかする",
+      "example": "친구와 싸웠어요.",
+      "example_ja": "友達とけんかしました。"
+    },
+    {
+      "word": "화해",
+      "reading": "ファヘ",
+      "meaning": "仲直り",
+      "example": "금방 화해했어요.",
+      "example_ja": "すぐ仲直りしました。"
+    },
+    {
+      "word": "믿다",
+      "reading": "ミッタ",
+      "meaning": "信じる",
+      "example": "친구를 믿어요.",
+      "example_ja": "友達を信じます。"
+    },
+    {
+      "word": "선물",
+      "reading": "ソンムル",
+      "meaning": "プレゼント",
+      "example": "선물을 줬어요.",
+      "example_ja": "プレゼントをあげました。"
+    }
+  ]
+}

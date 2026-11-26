@@ -1,0 +1,16 @@
+{
+  "theme": "お金と銀行",
+  "hook": "비밀번호",
+  "words": [
+    {"word": "돈", "reading": "トン", "meaning": "お金", "example": "돈이 없어요.", "example_ja": "お金がありません。"},
+    {"word": "통장", "reading": "トンチャン", "meaning": "通帳", "example": "통장을 만들었어요.", "example_ja": "通帳を作りました。"},
+    {"word": "저금", "reading": "チョグム", "meaning": "貯金", "example": "매달 저금해요.", "example_ja": "毎月貯金します。"},
+    {"word": "모으다", "reading": "モウダ", "meaning": "貯める", "example": "돈을 모았어요.", "example_ja": "お金を貯めました。"},
+    {"word": "빌리다", "reading": "ピルリダ", "meaning": "借りる", "example": "돈을 빌렸어요.", "example_ja": "お金を借りました。"},
+    {"word": "갚다", "reading": "カプタ", "meaning": "返す", "example": "돈을 갚았어요.", "example_ja": "お金を返しました。"},
+    {"word": "현금", "reading": "ヒョングム", "meaning": "現金", "example": "현금으로 낼게요.", "example_ja": "現金で払います。"},
+    {"word": "지갑", "reading": "チガプ", "meaning": "財布", "example": "지갑을 잃어버렸어요.", "example_ja": "財布をなくしました。"},
+    {"word": "비밀번호", "reading": "ピミルボノ", "meaning": "暗証番号", "example": "비밀번호를 잊었어요.", "example_ja": "暗証番号を忘れました。"},
+    {"word": "송금", "reading": "ソングム", "meaning": "送金", "example": "어제 송금했어요.", "example_ja": "昨日送金しました。"}
+  ]
+}

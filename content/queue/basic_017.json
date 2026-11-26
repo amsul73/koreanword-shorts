@@ -1,0 +1,17 @@
+{
+  "series": "basic",
+  "theme": "漢数字",
+  "hook": "십",
+  "words": [
+    {"word": "일", "reading": "イル", "meaning": "一", "example": "일 번이에요.", "example_ja": "一番です。"},
+    {"word": "이", "reading": "イ", "meaning": "二", "example": "이 층에 있어요.", "example_ja": "二階にあります。"},
+    {"word": "삼", "reading": "サム", "meaning": "三", "example": "삼 개 주세요.", "example_ja": "三個ください。"},
+    {"word": "사", "reading": "サ", "meaning": "四", "example": "사 월이에요.", "example_ja": "四月です。"},
+    {"word": "오", "reading": "オ", "meaning": "五", "example": "오 분 걸려요.", "example_ja": "五分かかります。"},
+    {"word": "육", "reading": "ユク", "meaning": "六", "example": "육 층이에요.", "example_ja": "六階です。"},
+    {"word": "칠", "reading": "チル", "meaning": "七", "example": "칠 월이에요.", "example_ja": "七月です。"},
+    {"word": "팔", "reading": "パル", "meaning": "八", "example": "팔 개예요.", "example_ja": "八個です。"},
+    {"word": "구", "reading": "ク", "meaning": "九", "example": "구 월이에요.", "example_ja": "九月です。"},
+    {"word": "십", "reading": "シプ", "meaning": "十", "example": "십 분 남았어요.", "example_ja": "十分残っています。"}
+  ]
+}

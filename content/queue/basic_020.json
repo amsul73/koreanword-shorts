@@ -1,0 +1,17 @@
+{
+  "series": "basic",
+  "theme": "形容詞2",
+  "hook": "유명하다",
+  "words": [
+    {"word": "빠르다", "reading": "ッパルダ", "meaning": "速い", "example": "기차가 빨라요.", "example_ja": "汽車が速いです。"},
+    {"word": "느리다", "reading": "ヌリダ", "meaning": "遅い", "example": "인터넷이 느려요.", "example_ja": "インターネットが遅いです。"},
+    {"word": "쉽다", "reading": "スィプタ", "meaning": "やさしい", "example": "시험이 쉬워요.", "example_ja": "試験がやさしいです。"},
+    {"word": "어렵다", "reading": "オリョプタ", "meaning": "難しい", "example": "한국어가 어려워요.", "example_ja": "韓国語が難しいです。"},
+    {"word": "무겁다", "reading": "ムゴプタ", "meaning": "重い", "example": "가방이 무거워요.", "example_ja": "かばんが重いです。"},
+    {"word": "가볍다", "reading": "カビョプタ", "meaning": "軽い", "example": "가방이 가벼워요.", "example_ja": "かばんが軽いです。"},
+    {"word": "맛없다", "reading": "マドプタ", "meaning": "まずい", "example": "이건 맛없어요.", "example_ja": "これはまずいです。"},
+    {"word": "재미없다", "reading": "チェミオプタ", "meaning": "つまらない", "example": "영화가 재미없어요.", "example_ja": "映画がつまらないです。"},
+    {"word": "친절하다", "reading": "チンジョラダ", "meaning": "親切だ", "example": "직원이 친절해요.", "example_ja": "店員が親切です。"},
+    {"word": "유명하다", "reading": "ユミョンハダ", "meaning": "有名だ", "example": "이 가게가 유명해요.", "example_ja": "この店が有名です。"}
+  ]
+}

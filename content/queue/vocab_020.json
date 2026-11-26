@@ -1,0 +1,16 @@
+{
+  "theme": "頻度と程度",
+  "hook": "가끔",
+  "words": [
+    {"word": "자주", "reading": "チャジュ", "meaning": "よく、頻繁に", "example": "자주 만나요.", "example_ja": "よく会います。"},
+    {"word": "가끔", "reading": "カックム", "meaning": "たまに", "example": "가끔 영화를 봐요.", "example_ja": "たまに映画を見ます。"},
+    {"word": "항상", "reading": "ハンサン", "meaning": "いつも", "example": "항상 늦어요.", "example_ja": "いつも遅れます。"},
+    {"word": "보통", "reading": "ポトン", "meaning": "ふつう", "example": "보통 일곱 시에 일어나요.", "example_ja": "ふつう七時に起きます。"},
+    {"word": "아주", "reading": "アジュ", "meaning": "とても", "example": "아주 좋아요.", "example_ja": "とてもいいです。"},
+    {"word": "조금", "reading": "チョグム", "meaning": "少し", "example": "조금만 주세요.", "example_ja": "少しだけください。"},
+    {"word": "너무", "reading": "ノム", "meaning": "〜すぎる", "example": "너무 비싸요.", "example_ja": "高すぎます。"},
+    {"word": "별로", "reading": "ピョルロ", "meaning": "あまり", "example": "별로 안 좋아해요.", "example_ja": "あまり好きではありません。"},
+    {"word": "거의", "reading": "コイ", "meaning": "ほとんど", "example": "거의 다 됐어요.", "example_ja": "ほとんどできました。"},
+    {"word": "전혀", "reading": "チョニョ", "meaning": "全然", "example": "전혀 몰랐어요.", "example_ja": "全然知りませんでした。"}
+  ]
+}

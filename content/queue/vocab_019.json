@@ -1,0 +1,16 @@
+{
+  "theme": "感覚と様子",
+  "hook": "부드럽다",
+  "words": [
+    {"word": "보이다", "reading": "ポイダ", "meaning": "見える", "example": "바다가 보여요.", "example_ja": "海が見えます。"},
+    {"word": "들리다", "reading": "トゥルリダ", "meaning": "聞こえる", "example": "소리가 들려요.", "example_ja": "音が聞こえます。"},
+    {"word": "조용하다", "reading": "チョヨンハダ", "meaning": "静かだ", "example": "교실이 조용해요.", "example_ja": "教室が静かです。"},
+    {"word": "시끄럽다", "reading": "シックロプタ", "meaning": "うるさい", "example": "밖이 시끄러워요.", "example_ja": "外がうるさいです。"},
+    {"word": "어둡다", "reading": "オドゥプタ", "meaning": "暗い", "example": "밖이 어두워요.", "example_ja": "外が暗いです。"},
+    {"word": "깨끗하다", "reading": "ッケックタダ", "meaning": "きれいだ、清潔だ", "example": "방이 깨끗해요.", "example_ja": "部屋がきれいです。"},
+    {"word": "더럽다", "reading": "トロプタ", "meaning": "汚い", "example": "손이 더러워요.", "example_ja": "手が汚いです。"},
+    {"word": "냄새", "reading": "ネムセ", "meaning": "におい", "example": "냄새가 좋아요.", "example_ja": "においがいいです。"},
+    {"word": "느낌", "reading": "ヌッキム", "meaning": "感じ", "example": "느낌이 좋아요.", "example_ja": "感じがいいです。"},
+    {"word": "부드럽다", "reading": "プドゥロプタ", "meaning": "柔らかい", "example": "아주 부드러워요.", "example_ja": "とても柔らかいです。"}
+  ]
+}

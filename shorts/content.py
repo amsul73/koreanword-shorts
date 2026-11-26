@@ -45,6 +45,9 @@ def validate(kind, data):
                 assert w.get(k), f"단어 항목에 {k} 없음: {w}"
             assert KATAKANA_RE.match(w["reading"]), \
                 f"reading은 가타카나로 적어야 합니다: {w['word']} → {w['reading']}"
+        if data.get("hook"):
+            assert data["hook"] in [w["word"] for w in data["words"]], \
+                f"hook '{data['hook']}'이 단어 목록에 없습니다 (썸네일에 빈 카드가 나옴)"
     else:
         for k in ("title", "meaning", "form", "examples"):
             assert data.get(k), f"문법에 {k} 없음"

@@ -1,0 +1,17 @@
+{
+  "series": "basic",
+  "theme": "乗り物",
+  "hook": "자전거",
+  "words": [
+    {"word": "자전거", "reading": "チャジョンゴ", "meaning": "自転車", "example": "자전거를 타요.", "example_ja": "自転車に乗ります。"},
+    {"word": "자동차", "reading": "チャドンチャ", "meaning": "自動車", "example": "자동차가 빨라요.", "example_ja": "自動車が速いです。"},
+    {"word": "기차", "reading": "キチャ", "meaning": "汽車", "example": "기차를 탔어요.", "example_ja": "汽車に乗りました。"},
+    {"word": "오토바이", "reading": "オトバイ", "meaning": "バイク", "example": "오토바이가 시끄러워요.", "example_ja": "バイクがうるさいです。"},
+    {"word": "트럭", "reading": "トゥロク", "meaning": "トラック", "example": "트럭이 커요.", "example_ja": "トラックが大きいです。"},
+    {"word": "타다", "reading": "タダ", "meaning": "乗る", "example": "버스를 타요.", "example_ja": "バスに乗ります。"},
+    {"word": "내리다", "reading": "ネリダ", "meaning": "降りる", "example": "여기서 내려요.", "example_ja": "ここで降ります。"},
+    {"word": "운전", "reading": "ウンジョン", "meaning": "運転", "example": "운전을 배워요.", "example_ja": "運転を習います。"},
+    {"word": "표", "reading": "ピョ", "meaning": "切符", "example": "표를 샀어요.", "example_ja": "切符を買いました。"},
+    {"word": "주차장", "reading": "チュチャジャン", "meaning": "駐車場", "example": "주차장이 넓어요.", "example_ja": "駐車場が広いです。"}
+  ]
+}

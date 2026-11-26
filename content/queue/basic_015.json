@@ -1,0 +1,17 @@
+{
+  "series": "basic",
+  "theme": "果物と野菜",
+  "hook": "복숭아",
+  "words": [
+    {"word": "바나나", "reading": "パナナ", "meaning": "バナナ", "example": "바나나를 먹어요.", "example_ja": "バナナを食べます。"},
+    {"word": "딸기", "reading": "ッタルギ", "meaning": "いちご", "example": "딸기가 맛있어요.", "example_ja": "いちごがおいしいです。"},
+    {"word": "포도", "reading": "ポド", "meaning": "ぶどう", "example": "포도를 샀어요.", "example_ja": "ぶどうを買いました。"},
+    {"word": "수박", "reading": "スバク", "meaning": "すいか", "example": "수박이 커요.", "example_ja": "すいかが大きいです。"},
+    {"word": "복숭아", "reading": "ポッスンア", "meaning": "桃", "example": "복숭아가 달아요.", "example_ja": "桃が甘いです。"},
+    {"word": "감자", "reading": "カムジャ", "meaning": "じゃがいも", "example": "감자를 삶아요.", "example_ja": "じゃがいもをゆでます。"},
+    {"word": "당근", "reading": "タングン", "meaning": "にんじん", "example": "당근을 좋아해요.", "example_ja": "にんじんが好きです。"},
+    {"word": "양파", "reading": "ヤンパ", "meaning": "たまねぎ", "example": "양파를 썰어요.", "example_ja": "たまねぎを切ります。"},
+    {"word": "오이", "reading": "オイ", "meaning": "きゅうり", "example": "오이가 시원해요.", "example_ja": "きゅうりがさっぱりします。"},
+    {"word": "배추", "reading": "ペチュ", "meaning": "白菜", "example": "배추로 김치를 만들어요.", "example_ja": "白菜でキムチを作ります。"}
+  ]
+}

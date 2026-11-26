@@ -1,0 +1,16 @@
+{
+  "theme": "韓国の文化",
+  "hook": "콘서트",
+  "words": [
+    {"word": "드라마", "reading": "トゥラマ", "meaning": "ドラマ", "example": "한국 드라마를 봐요.", "example_ja": "韓国ドラマを見ます。"},
+    {"word": "가수", "reading": "カス", "meaning": "歌手", "example": "좋아하는 가수가 있어요.", "example_ja": "好きな歌手がいます。"},
+    {"word": "콘서트", "reading": "コンソトゥ", "meaning": "コンサート", "example": "콘서트에 갔어요.", "example_ja": "コンサートに行きました。"},
+    {"word": "팬", "reading": "ペン", "meaning": "ファン", "example": "저는 팬이에요.", "example_ja": "私はファンです。"},
+    {"word": "한복", "reading": "ハンボク", "meaning": "韓服", "example": "한복을 입었어요.", "example_ja": "韓服を着ました。"},
+    {"word": "명절", "reading": "ミョンジョル", "meaning": "祝日、節句", "example": "명절에 가족이 모여요.", "example_ja": "祝日に家族が集まります。"},
+    {"word": "떡", "reading": "ットク", "meaning": "餅", "example": "떡을 먹어요.", "example_ja": "餅を食べます。"},
+    {"word": "축제", "reading": "チュッチェ", "meaning": "祭り", "example": "축제가 재미있어요.", "example_ja": "祭りが面白いです。"},
+    {"word": "전통", "reading": "チョントン", "meaning": "伝統", "example": "전통 음악을 들어요.", "example_ja": "伝統音楽を聞きます。"},
+    {"word": "인사", "reading": "インサ", "meaning": "あいさつ", "example": "인사를 잘해요.", "example_ja": "あいさつをよくします。"}
+  ]
+}

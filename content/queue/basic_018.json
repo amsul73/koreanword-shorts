@@ -1,0 +1,17 @@
+{
+  "series": "basic",
+  "theme": "位置",
+  "hook": "가운데",
+  "words": [
+    {"word": "위", "reading": "ウィ", "meaning": "上", "example": "책상 위에 있어요.", "example_ja": "机の上にあります。"},
+    {"word": "아래", "reading": "アレ", "meaning": "下", "example": "의자 아래에 있어요.", "example_ja": "いすの下にあります。"},
+    {"word": "앞", "reading": "アプ", "meaning": "前", "example": "집 앞에서 만나요.", "example_ja": "家の前で会います。"},
+    {"word": "뒤", "reading": "トゥィ", "meaning": "後ろ", "example": "뒤를 보세요.", "example_ja": "後ろを見てください。"},
+    {"word": "옆", "reading": "ヨプ", "meaning": "横", "example": "옆에 앉으세요.", "example_ja": "横に座ってください。"},
+    {"word": "안", "reading": "アン", "meaning": "中", "example": "가방 안에 있어요.", "example_ja": "かばんの中にあります。"},
+    {"word": "밖", "reading": "パク", "meaning": "外", "example": "밖에 나가요.", "example_ja": "外に出ます。"},
+    {"word": "사이", "reading": "サイ", "meaning": "間", "example": "둘 사이에 있어요.", "example_ja": "二つの間にあります。"},
+    {"word": "가운데", "reading": "カウンデ", "meaning": "真ん中", "example": "가운데에 앉아요.", "example_ja": "真ん中に座ります。"},
+    {"word": "근처", "reading": "クンチョ", "meaning": "近く", "example": "근처에 가게가 있어요.", "example_ja": "近くに店があります。"}
+  ]
+}
